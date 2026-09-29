@@ -1,0 +1,5 @@
+---
+title: "Titre du cours — cours & exercices"
+---
+
+Ce site accompagne le **cours imprimé**. On y trouve le même texte, avec les **mêmes numéros**, et en plus des figures dynamiques, des coups de pouce pour chaque exercice et une page pour **s'autoévaluer**.

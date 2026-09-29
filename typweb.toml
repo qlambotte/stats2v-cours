@@ -1,0 +1,44 @@
+# ============================================================
+#  typweb.toml — réglages d'un site de cours (un par site).
+#  Chemins relatifs au dossier du site.
+# ============================================================
+
+[cours]
+titre      = "Statistiques à deux variables"
+sous-titre = "Cours & exercices — 5e, 4 périodes (5UAAx)"
+auteur     = "Quentin Lambotte"
+annee      = "5e"                 # 5e ou 6e (pour la page de l'année)
+uaa        = "5UAA1"
+depot      = "https://https://github.com/qlambotte/stats2v-cours"                   # ex. "https://https://github.com/qlambotte/stats2v-cours" (bouton GitHub)
+site-url   = "https://qlambotte.github.io/stats2v-cours/"                   # ex. "https://qlambotte.github.io/stats2v-cours/"
+portail    = "https://qlambotte.github.io/5e.html"                   # page de l'année, ex. "https://qlambotte.github.io/5e.html" (icône maison)
+# pied     = "Titre — cours & exercices"
+
+[notes]
+dossier    = "../notes"           # dossier des .typ
+principal  = "cours.typ"          # livre principal (ordre des chapitres : #include)
+# cle      = "cours"              # préfixe des fichiers associés (par défaut : nom du principal)
+# objectifs = "objectifs.typ"     # grille : puce("A2")[…]
+# aides    = "cours-aides.typ"    # coups de pouce des exercices (3 indices, solution, pièges)
+# autoeval = "cours-autoeval.typ" # banque d'autoévaluation
+
+[pdf]
+# Menu « Télécharger » (en haut à gauche) : version élève toujours ; corrigé si demandé.
+# eleve            = "cours.pdf"          # nom du PDF élève dans le site
+corrige            = false                # compiler aussi le corrigé (--input corrige=1)
+# corrige-en-ligne = true                 # false : compilé mais PAS proposé sur le site
+# nom-corrige      = "cours-corrige.pdf"
+# polices          = "~/fonts"            # relatif au dossier du site (ou ~/…)
+# pages-distribuees = "pages-distribuees.json"  # TEMPORAIRE : bulle calée sur la version papier distribuée (.json ou .pdf)
+# Autres PDF à proposer (fichiers placés dans le dossier du site) :
+# [[pdf.autres]]
+# titre   = "Exercices supplémentaires"
+# fichier = "exos-suppl.pdf"
+
+[modules]
+actifs = ["fonctions"]            # domaines : "fonctions" (repères, point mobile, tableaux de signes)
+
+# Réglages propres à un module :
+# [module.fonctions]
+# donnees = ["courbes-anciennes.typ"]      # fichiers lus avant le cours
+# replier-avant-chapitre = "Limites"       # avant ce chapitre : point mobile replié + écart
