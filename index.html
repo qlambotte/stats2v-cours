@@ -37,7 +37,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./ch1-deux-variables-un-nu/index.html" rel="next">
+<link href="./objectifs.html" rel="next">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -47,7 +47,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-73b0ff3878a4e6fc3716dc69a6aaefa3.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-6d0c5db4ac5ad3a9b2670bfac89d9862.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-0acde44bc0d102c041e82b1c9a7c52be.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -81,6 +81,8 @@ ul.task-list li input[type="checkbox"] {
   try {
     var t = localStorage.getItem('imsv-theme');
     if (t === 'dark' || t === 'light') document.documentElement.setAttribute('data-theme', t);
+    var st = localStorage.getItem('typweb-style');
+    if (st) document.documentElement.setAttribute('data-style', st);   // styles à l'essai (menu « Aa »)
   } catch (e) {}
 })();
 </script>
@@ -125,6 +127,11 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Titre du cours — cours &amp; exercices</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./objectifs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Objectifs</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -281,6 +288,16 @@ ul.task-list li input[type="checkbox"] {
 </li>
       </ul>
   </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./essentiel.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">L’essentiel</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./nouveautes.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Quoi de neuf ?</span></a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
@@ -472,16 +489,44 @@ ul.task-list li input[type="checkbox"] {
     host.appendChild(themeBtn);
   }
 
+  // « Aa » (styles à l'essai) et crayon d'annotation : sur grand écran, à côté
+  // du bouton de thème ; sur petit écran (menu latéral replié), en bas à gauche.
+  var grand = window.matchMedia('(min-width: 992px)');
+  function accrocher() {
+    var host = document.querySelector('.sidebar-tools-main');
+    var els = ['.st-menu', '.an-barre'].map(function (sel) { return document.querySelector(sel); })
+                                       .filter(Boolean);
+    if (grand.matches && host) {
+      var fin = Array.prototype.slice.call(host.children, -els.length);
+      if (fin.length !== els.length || fin.some(function (e, i) { return e !== els[i]; }))
+        els.forEach(function (el) { host.appendChild(el); });
+      els.forEach(function (el) { el.classList.add('dans-outils'); });
+    } else {
+      els.forEach(function (el) {
+        if (el.parentNode !== document.body) document.body.appendChild(el);
+        el.classList.remove('dans-outils');
+      });
+    }
+  }
+  if (grand.addEventListener) grand.addEventListener('change', accrocher);
+  // panneau « Aa » (position fixe, pour ne pas être coupé par le menu latéral) : sous le bouton
+  document.addEventListener('click', function (e) {
+    var b = e.target.closest && e.target.closest('.dans-outils .st-btn');
+    var p = b && b.parentNode.querySelector('.st-panneau');
+    if (p) p.style.top = (b.getBoundingClientRect().bottom + 6) + 'px';
+  }, true);
+
   document.addEventListener('DOMContentLoaded', function () {
     build();
-    setTimeout(build, 100);
+    accrocher();
+    [100, 400, 1200].forEach(function (t) { setTimeout(function () { build(); accrocher(); }, t); });
   });
 })();
 </script>
 <!-- GÉNÉRÉ par typweb — ne pas éditer -->
 <script>
 /* Réglages du cours (typweb.toml) */
-window.TYPWEB = {"cle": "stats", "pdf": "stats.pdf", "depot": "https://https://github.com/qlambotte/stats2v-cours", "pdfs": [{"titre": "Cours — version élève", "detail": "réponses à compléter", "fichier": "stats.pdf"}], "portail": "https://qlambotte.github.io/5e.html"};
+window.TYPWEB = {"cle": "stats", "pdf": "stats.pdf", "depot": "https://https://github.com/qlambotte/stats2v-cours", "pdfs": [{"titre": "Cours — version élève", "detail": "réponses à compléter", "fichier": "stats.pdf"}], "portail": "https://qlambotte.github.io/5e.html", "horsLigne": true};
 /* Charge les scripts du site (js/) avec le bon chemin relatif,
    quelle que soit la profondeur de la page. */
 (function () {
@@ -493,16 +538,67 @@ window.TYPWEB = {"cle": "stats", "pdf": "stats.pdf", "depot": "https://https://g
     off = u.indexOf("site_libs/") >= 0 ? u.slice(0, u.indexOf("site_libs/")) : "";
   }
   window.SITE_OFFSET = off;
+  /* mode hors-ligne (sw.js) : pas en aperçu local, où il gênerait les mises à jour */
+  if ("serviceWorker" in navigator && window.TYPWEB.horsLigne) {
+    if (/^(localhost|127\.|\[::1\])/.test(location.hostname) || location.protocol === "file:") {
+      navigator.serviceWorker.getRegistrations().then(function (rs) { rs.forEach(function (r) { r.unregister(); }); });
+    } else {
+      window.addEventListener("load", function () { navigator.serviceWorker.register(off + "sw.js").catch(function () {}); });
+    }
+  }
   ["js/autoeval.css"].forEach(function (s) {
     var c = document.createElement("link");
     c.rel = "stylesheet"; c.href = off + s;
     document.head.appendChild(c);
   });
-  ["js/lim-plot.js", "js/reponses.js", "js/annot.js", "js/bulle-pdf.js", "js/autoeval.js"].forEach(function (s) {
+  ["js/lim-plot.js", "js/reponses.js", "js/annot.js", "js/bulle-pdf.js", "js/autoeval.js", "js/suivi.js", "js/projection.js"].forEach(function (s) {
     var e = document.createElement("script");
     e.src = off + s; e.async = false;
     document.body.appendChild(e);
   });
+})();
+</script>
+<script>
+// Menu « Aa » (en bas à gauche) : essayer les styles du site. Le choix est
+// mémorisé dans ce navigateur (localStorage « typweb-style »). À retirer quand
+// un style est retenu (typweb.toml : [site] styles-essai = false).
+(function () {
+  var STYLES = [
+    ["", "Actuel"],
+    ["epure", "1 · Épure"],
+    ["epure-types", "2 · Épure, couleurs de type"],
+    ["manuel", "3 · Manuel moderne"],
+    ["cahier", "4 · Cahier"],
+    ["ardoise", "7 · Ardoise"],
+    ["lecture", "8 · Lecture concentrée"],
+    ["fiches", "9 · Fiches numérotées"]
+  ];
+  function courant() { try { return localStorage.getItem("typweb-style") || ""; } catch (e) { return ""; } }
+  function appliquer(s) {
+    if (s) document.documentElement.setAttribute("data-style", s);
+    else document.documentElement.removeAttribute("data-style");
+    try { if (s) localStorage.setItem("typweb-style", s); else localStorage.removeItem("typweb-style"); } catch (e) {}
+    document.querySelectorAll(".st-panneau button").forEach(function (b) { b.classList.toggle("on", b.dataset.s === s); });
+    window.dispatchEvent(new Event("resize"));      // figures : se redessiner
+  }
+  function build() {
+    if (document.querySelector(".st-menu")) return;
+    var m = document.createElement("div"); m.className = "st-menu";
+    var b = document.createElement("button"); b.className = "st-btn"; b.type = "button"; b.textContent = "Aa";
+    b.title = "Essayer un autre style"; b.setAttribute("aria-label", "Essayer un autre style");
+    var p = document.createElement("div"); p.className = "st-panneau"; p.hidden = true;
+    p.innerHTML = "<p>Style du site (mode clair)</p>";
+    STYLES.forEach(function (s) {
+      var x = document.createElement("button"); x.type = "button"; x.dataset.s = s[0]; x.textContent = s[1];
+      x.addEventListener("click", function () { appliquer(s[0]); });
+      p.appendChild(x);
+    });
+    b.addEventListener("click", function () { p.hidden = !p.hidden; });
+    document.addEventListener("click", function (e) { if (!m.contains(e.target)) p.hidden = true; });
+    m.appendChild(p); m.appendChild(b); document.body.appendChild(m);
+    appliquer(courant());
+  }
+  if (document.readyState !== "loading") build(); else document.addEventListener("DOMContentLoaded", build);
 })();
 </script>
 <script id="quarto-html-after-body" type="application/javascript">
@@ -909,8 +1005,8 @@ window.TYPWEB = {"cle": "stats", "pdf": "stats.pdf", "depot": "https://https://g
   <div class="nav-page nav-page-previous">
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./ch1-deux-variables-un-nu/index.html" class="pagination-link" aria-label="Chapitre 1 — Deux variables, un nuage de points">
-        <span class="nav-page-text">Chapitre 1 — Deux variables, un nuage de points</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./objectifs.html" class="pagination-link" aria-label="Objectifs">
+        <span class="nav-page-text"><span class="chapter-title">Objectifs</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -921,8 +1017,8 @@ window.TYPWEB = {"cle": "stats", "pdf": "stats.pdf", "depot": "https://https://g
 <p>Statistiques à deux variables — cours &amp; exercices</p>
 </div>   
     <div class="nav-footer-center">
-<p>Mêmes numéros que le cours imprimé</p>
-</div>
+      &nbsp;
+    </div>
     <div class="nav-footer-right">
 <p>© Quentin Lambotte</p>
 </div>
