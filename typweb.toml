@@ -5,18 +5,18 @@
 
 [cours]
 titre      = "Statistiques à deux variables"
-sous-titre = "Cours & exercices — 5e, 4 périodes (5UAAx)"
+sous-titre = "Cours & exercices — 5e, 4 périodes (5UAA1)"
 auteur     = "Quentin Lambotte"
 annee      = "5e"                 # 5e ou 6e (pour la page de l'année)
 uaa        = "5UAA1"
-depot      = "https://https://github.com/qlambotte/stats2v-cours"                   # ex. "https://https://github.com/qlambotte/stats2v-cours" (bouton GitHub)
+depot      = "https://github.com/qlambotte/stats2v-cours"                   # ex. "https://github.com/qlambotte/stats2v-cours" (bouton GitHub)
 site-url   = "https://qlambotte.github.io/stats2v-cours/"                   # ex. "https://qlambotte.github.io/stats2v-cours/"
 portail    = "https://qlambotte.github.io/5e.html"                   # page de l'année, ex. "https://qlambotte.github.io/5e.html" (icône maison)
 # pied     = "Titre — cours & exercices"
 
 [notes]
 dossier    = "../notes"           # dossier des .typ
-principal  = "cours.typ"          # livre principal (ordre des chapitres : #include)
+principal  = "stats.typ"            # livre principal (ordre des chapitres : #include)
 # cle      = "cours"              # préfixe des fichiers associés (par défaut : nom du principal)
 # objectifs = "objectifs.typ"     # grille : puce("A2")[…]
 # aides    = "cours-aides.typ"    # coups de pouce des exercices (3 indices, solution, pièges)
