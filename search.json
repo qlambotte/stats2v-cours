@@ -440,5 +440,125 @@
     "crumbs": [
       "<span class='chapter-number'>26</span>  <span class='chapter-title'>Quoi de neuf ?</span>"
     ]
+  },
+  {
+    "objectID": "mode-emploi.html",
+    "href": "mode-emploi.html",
+    "title": "Mode d’emploi",
+    "section": "",
+    "text": "Le site et le cours imprimé\nCe site reprend ton cours imprimé, avec les mêmes numéros (Définition 2.3, Exercice 2.14…). Tu peux passer de l’un à l’autre sans te perdre. Sur grand écran, le cadre « ← page N des notes » en haut à droite (sur téléphone, la bulle « Notes p. N » en bas à droite) indique la page du PDF où se trouve ce que tu lis ; un clic l’ouvre à cette page.\nIl ne remplace pas le travail en classe : il le prolonge. On y trouve en plus des figures qu’on peut manipuler, des coups de pouce pour les exercices et de quoi t’autoévaluer.",
+    "crumbs": [
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Mode d'emploi</span>"
+    ]
+  },
+  {
+    "objectID": "mode-emploi.html#se-repérer",
+    "href": "mode-emploi.html#se-repérer",
+    "title": "Mode d’emploi",
+    "section": "Se repérer",
+    "text": "Se repérer\n\nMenu de gauche : les chapitres, puis leurs sections (une section = une page). Sur téléphone, il s’ouvre avec le bouton ☰ en haut.\n« Sur cette page » (à droite) : les titres de la page ; clique pour l’ouvrir.\nRecherche (loupe) : un mot du cours, un numéro d’exercice…\nLes icônes sous le titre du cours :\n\nla maison : tous les cours de ton année ;\nla flèche vers le bas : télécharger le cours en PDF ;\nla lune / le soleil : mode sombre ou clair ;\nAa : taille du texte (A− / A+ ; clique sur le pourcentage pour revenir à 100 %) ;\nle crayon : annoter la page (voir plus bas) ;\nl’écran : mode projection, utilisé en classe ;\n? : cette page.",
+    "crumbs": [
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Mode d'emploi</span>"
+    ]
+  },
+  {
+    "objectID": "mode-emploi.html#les-réponses-cachées",
+    "href": "mode-emploi.html#les-réponses-cachées",
+    "title": "Mode d’emploi",
+    "section": "Les réponses cachées",
+    "text": "Les réponses cachées\nDans les activités et les exemples, certaines réponses sont cachées : elles apparaissent comme une zone soulignée en pointillé. Cherche d’abord, puis clique dessus pour voir la réponse ; reclique pour la cacher.\n\nUne réponse plus longue est dans un cadre « Réponse — clique pour l’afficher ».\nLe bouton Tout afficher dans l’en-tête d’un encadré montre toutes ses réponses d’un coup.",
+    "crumbs": [
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Mode d'emploi</span>"
+    ]
+  },
+  {
+    "objectID": "mode-emploi.html#les-figures-quon-peut-manipuler",
+    "href": "mode-emploi.html#les-figures-quon-peut-manipuler",
+    "title": "Mode d’emploi",
+    "section": "Les figures qu’on peut manipuler",
+    "text": "Les figures qu’on peut manipuler\nBeaucoup de graphiques sont interactifs : déplace le point ou le curseur et observe ce qui change. Sous certaines figures, le petit bouton ▸ ouvre un panneau avec un point mobile et ses coordonnées.\nPrends le temps de jouer avec : c’est souvent là que l’idée devient claire, avant la formule.",
+    "crumbs": [
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Mode d'emploi</span>"
+    ]
+  },
+  {
+    "objectID": "mode-emploi.html#les-exercices-et-leurs-coups-de-pouce",
+    "href": "mode-emploi.html#les-exercices-et-leurs-coups-de-pouce",
+    "title": "Mode d’emploi",
+    "section": "Les exercices et leurs coups de pouce",
+    "text": "Les exercices et leurs coups de pouce\nSous la plupart des exercices, ▶ Coups de pouce ouvre cinq onglets :\n\nIndice 1 : la partie du cours qui sert ;\nIndice 2 : une question à te poser ;\nIndice 3 : une première étape ;\nSolution : la réponse rédigée comme on l’attend en interro ;\nPièges : les erreurs fréquentes.\n\nUtilise-les un par un, seulement quand tu bloques, et recommence à chercher seul après chaque indice. Lire la solution tout de suite donne l’impression d’avoir compris, mais n’entraîne pas.\nMon suivi : sous chaque exercice, coche Fait (tu l’as fait) puis Réussi (tu l’as réussi seul). En haut de la page, un bilan te dit où tu en es ; la page de chaque chapitre montre une barre par section.",
+    "crumbs": [
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Mode d'emploi</span>"
+    ]
+  },
+  {
+    "objectID": "mode-emploi.html#objectifs",
+    "href": "mode-emploi.html#objectifs",
+    "title": "Mode d’emploi",
+    "section": "Objectifs",
+    "text": "Objectifs\nLa page Objectifs reprend la grille du début de ton cours imprimé : ce que tu dois être capable de faire.",
+    "crumbs": [
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Mode d'emploi</span>"
+    ]
+  },
+  {
+    "objectID": "mode-emploi.html#lessentiel",
+    "href": "mode-emploi.html#lessentiel",
+    "title": "Mode d’emploi",
+    "section": "L’essentiel",
+    "text": "L’essentiel\nLa page L’essentiel rassemble les définitions et propriétés du cours, dans l’ordre. Elle sert à retrouver un énoncé ou à vérifier que tu peux le redire sans regarder. Elle ne remplace ni le cours (où les idées sont construites et justifiées) ni les exercices : connaître un énoncé ne suffit pas, il faut savoir s’en servir. Le lien « dans le cours » sous chaque encadré te ramène à sa place.",
+    "crumbs": [
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Mode d'emploi</span>"
+    ]
+  },
+  {
+    "objectID": "mode-emploi.html#quoi-de-neuf",
+    "href": "mode-emploi.html#quoi-de-neuf",
+    "title": "Mode d’emploi",
+    "section": "Quoi de neuf ?",
+    "text": "Quoi de neuf ?\nLa page Quoi de neuf ? liste, par date, ce qui a changé dans le cours en ligne : nouvelles sections, encadrés ajoutés ou corrigés. Jette un œil avant de réviser.",
+    "crumbs": [
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Mode d'emploi</span>"
+    ]
+  },
+  {
+    "objectID": "mode-emploi.html#annoter-la-page",
+    "href": "mode-emploi.html#annoter-la-page",
+    "title": "Mode d’emploi",
+    "section": "Annoter la page",
+    "text": "Annoter la page\nLe crayon ouvre une petite boîte à outils :\n\nStylo : dessiner (souris, doigt ou stylet), en noir, rouge, bleu ou vert ;\nSurligneur : sélectionne un passage du texte pour le surligner ;\nNote : un post-it là où tu cliques ;\nCorrection : un post-it rouge pour signaler une erreur dans le cours ; la liste des corrections notées se copie d’un clic pour l’envoyer à ton professeur ;\nGomme : clique un trait, un surlignage ou une note pour l’effacer ;\nl’œil masque ou réaffiche tes annotations ; les flèches exportent ou importent tes annotations (pour passer d’un ordinateur à l’autre).\n\nTes annotations restent attachées au bon paragraphe, même si la page change de taille.",
+    "crumbs": [
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Mode d'emploi</span>"
+    ]
+  },
+  {
+    "objectID": "mode-emploi.html#tes-données",
+    "href": "mode-emploi.html#tes-données",
+    "title": "Mode d’emploi",
+    "section": "Tes données",
+    "text": "Tes données\nTout ce que tu fais ici (annotations, suivi des exercices, résultats d’autoévaluation, taille du texte) reste dans ce navigateur, sur cet appareil. Rien n’est envoyé à personne, pas même à ton professeur.\n\nSur un autre appareil ou un autre navigateur, tu repars de zéro.\nEn navigation privée, tout est effacé à la fermeture.\nPour garder tes annotations : Exporter dans la boîte à outils du crayon.",
+    "crumbs": [
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Mode d'emploi</span>"
+    ]
+  },
+  {
+    "objectID": "mode-emploi.html#sans-connexion",
+    "href": "mode-emploi.html#sans-connexion",
+    "title": "Mode d’emploi",
+    "section": "Sans connexion",
+    "text": "Sans connexion\nUne fois le site visité avec une connexion, ses pages restent consultables hors ligne (dans le train, sans données…). Les PDF, eux, doivent être téléchargés à l’avance.",
+    "crumbs": [
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Mode d'emploi</span>"
+    ]
+  },
+  {
+    "objectID": "mode-emploi.html#une-façon-efficace-de-travailler",
+    "href": "mode-emploi.html#une-façon-efficace-de-travailler",
+    "title": "Mode d’emploi",
+    "section": "Une façon efficace de travailler",
+    "text": "Une façon efficace de travailler\n\nLis la section (et manipule les figures) après l’avoir vue en classe.\nCherche les réponses cachées avant de cliquer.\nFais les exercices ; un coup de pouce à la fois, seulement si tu bloques ; note Fait / Réussi.",
+    "crumbs": [
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Mode d'emploi</span>"
+    ]
   }
 ]

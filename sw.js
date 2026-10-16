@@ -3,9 +3,9 @@
      gardée ; toutes les pages sont mises de côté à la première visite ;
    - le reste (scripts, styles, figures, polices, MathJax) : copie gardée,
      rafraîchie en arrière-plan. Les PDF ne sont pas mis de côté (trop lourds). */
-var VERSION = "582ab3a56a";
+var VERSION = "46fbe7984b";
 var CACHE = "typweb-" + VERSION;
-var PAGES = ["./", "index.html", "ch1-deux-variables-un-nu/1-reactiver-une-variable-une-moyenne.html", "ch1-deux-variables-un-nu/2-une-serie-statistique-a-deux.html", "ch1-deux-variables-un-nu/3-le-nuage-de-points.html", "ch1-deux-variables-un-nu/4-le-point-moyen.html", "ch1-deux-variables-un-nu/5-decrire-un-nuage.html", "ch1-deux-variables-un-nu/6-exercices.html", "ch1-deux-variables-un-nu/index.html", "ch2-ajuster-un-nuage-par/1-pourquoi-ajuster.html", "ch2-ajuster-un-nuage-par/2-une-serie-qui-evolue-lecart.html", "ch2-ajuster-un-nuage-par/3-le-point-moyen-pivot-de.html", "ch2-ajuster-un-nuage-par/4-la-droite-de-mayer.html", "ch2-ajuster-un-nuage-par/5-faire-parler-les-ecarts-a.html", "ch2-ajuster-un-nuage-par/6-la-methode-des-moindres-carres.html", "ch2-ajuster-un-nuage-par/7-exercices.html", "ch2-ajuster-un-nuage-par/index.html", "ch3-mesurer-la-liaison-l/1-un-nombre-entre-1-et.html", "ch3-mesurer-la-liaison-l/2-lire-r-sur-un-nuage.html", "ch3-mesurer-la-liaison-l/3-calculer-r.html", "ch3-mesurer-la-liaison-l/4-correlation-nest-pas-causalite.html", "ch3-mesurer-la-liaison-l/5-exercices.html", "ch3-mesurer-la-liaison-l/index.html", "ch4-utiliser-un-ajusteme/1-prevoir-interpolation-et-extrapolation.html", "ch4-utiliser-un-ajusteme/2-les-limites-de-lextrapolation.html", "ch4-utiliser-un-ajusteme/3-un-vrai-document-a-critiquer.html", "ch4-utiliser-un-ajusteme/4-exercices.html", "ch4-utiliser-un-ajusteme/index.html", "essentiel.html", "nouveautes.html", "objectifs.html"];
+var PAGES = ["./", "index.html", "index.json", "ch1-deux-variables-un-nu/1-reactiver-une-variable-une-moyenne.html", "ch1-deux-variables-un-nu/2-une-serie-statistique-a-deux.html", "ch1-deux-variables-un-nu/3-le-nuage-de-points.html", "ch1-deux-variables-un-nu/4-le-point-moyen.html", "ch1-deux-variables-un-nu/5-decrire-un-nuage.html", "ch1-deux-variables-un-nu/6-exercices.html", "ch1-deux-variables-un-nu/index.html", "ch2-ajuster-un-nuage-par/1-pourquoi-ajuster.html", "ch2-ajuster-un-nuage-par/2-une-serie-qui-evolue-lecart.html", "ch2-ajuster-un-nuage-par/3-le-point-moyen-pivot-de.html", "ch2-ajuster-un-nuage-par/4-la-droite-de-mayer.html", "ch2-ajuster-un-nuage-par/5-faire-parler-les-ecarts-a.html", "ch2-ajuster-un-nuage-par/6-la-methode-des-moindres-carres.html", "ch2-ajuster-un-nuage-par/7-exercices.html", "ch2-ajuster-un-nuage-par/index.html", "ch3-mesurer-la-liaison-l/1-un-nombre-entre-1-et.html", "ch3-mesurer-la-liaison-l/2-lire-r-sur-un-nuage.html", "ch3-mesurer-la-liaison-l/3-calculer-r.html", "ch3-mesurer-la-liaison-l/4-correlation-nest-pas-causalite.html", "ch3-mesurer-la-liaison-l/5-exercices.html", "ch3-mesurer-la-liaison-l/index.html", "ch4-utiliser-un-ajusteme/1-prevoir-interpolation-et-extrapolation.html", "ch4-utiliser-un-ajusteme/2-les-limites-de-lextrapolation.html", "ch4-utiliser-un-ajusteme/3-un-vrai-document-a-critiquer.html", "ch4-utiliser-un-ajusteme/4-exercices.html", "ch4-utiliser-un-ajusteme/index.html", "essentiel.html", "mode-emploi.html", "nouveautes.html", "objectifs.html"];
 
 self.addEventListener("install", function (e) {
   e.waitUntil(caches.open(CACHE).then(function (c) {
@@ -32,7 +32,9 @@ self.addEventListener("fetch", function (e) {
   if (req.method !== "GET") return;
   var url = new URL(req.url);
   if (/\.pdf$/i.test(url.pathname)) return;
-  var page = req.mode === "navigate" || (req.headers.get("accept") || "").indexOf("text/html") >= 0;
+  // pages, index.json, prof.js (couche prof) et sync.js (synchronisation) : réseau d'abord, copie si hors ligne
+  var page = req.mode === "navigate" || (req.headers.get("accept") || "").indexOf("text/html") >= 0
+             || /(\.json|\/prof\.js|\/sync\.js)$/.test(url.pathname);
   if (page) {
     e.respondWith(fetch(req).then(function (r) { return garder(req, r); }).catch(function () {
       return caches.match(req, { ignoreSearch: true }).then(function (r) {
