@@ -1,0 +1,15 @@
+---
+title: "Les limites de l’extrapolation"
+---
+
+<!-- GÉNÉRÉ par typweb à partir des notes Typst : NE PAS ÉDITER (les modifications seraient écrasées). -->
+
+::: {.callout-warning title="Extrapoler, c'est parier"}
+Prolonger une droite au-delà des données suppose que la tendance **continue à l’identique**. Ce n’est jamais garanti :
+
+- la tendance peut **ralentir** ou se **stabiliser** (ici, l’écart pourrait s’approcher de $0$ sans jamais l’atteindre) ;
+- un chiffre proche de $0$ peut **cacher** d’autres inégalités : l’écart *horaire* non ajusté ignore le temps partiel (surtout féminin), la ségrégation des métiers et le plafond de verre ; mesuré sur les *revenus annuels*, l’écart reste bien plus élevé ;
+- le nuage lui-même n’est pas parfaitement droit (le point de 2010 remonte).
+
+Une extrapolation est une **hypothèse**, pas une certitude.
+:::

@@ -1,0 +1,22 @@
+---
+title: "Utiliser un ajustement, et le critiquer"
+---
+
+Quatrième chapitre. Tu y trouveras :
+
+- **[Le cours](cours.qmd)** — interpoler et extrapoler, les **limites** d'une prévision,
+  et un **vrai document** à critiquer (testing d'embauche) ;
+- **[Les exercices](exercices.qmd)** — avec **coups de pouce** progressifs.
+
+## Objectifs de la séance
+
+À la fin du chapitre, tu es capable de…
+
+- **A5** — calculer une valeur théorique à partir d'un ajustement (interpolation,
+  extrapolation) ;
+- **T1** — critiquer et commenter des informations statistiques présentées ou calculées.
+
+::: {.callout-tip title="L'essentiel du chapitre"}
+Une droite permet de **prévoir** — mais toute prévision a ses **limites**. Savoir les
+repérer, chez soi comme dans un article, est la compétence la plus utile de tout ce cours.
+:::

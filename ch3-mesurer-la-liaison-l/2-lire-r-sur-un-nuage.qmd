@@ -1,0 +1,25 @@
+---
+title: "Lire r sur un nuage"
+---
+
+<!-- GÉNÉRÉ par typweb à partir des notes Typst : NE PAS ÉDITER (les modifications seraient écrasées). -->
+
+::: {#activite-3-1 data-sorte="activite" data-num="3.1" data-page="16" data-phys="19" data-id="5UAA1.associer-nuage-son-coefficient" data-type="activite" data-tags="" .theo .theo-activite}
+::: {.theo-head}
+**Activité 3.1** — associer un nuage à son coefficient
+:::
+
+::: {.theo-body}
+Associe chacun des quatre nuages à l’une des valeurs de $r$ proposées :
+
+$$
+0{,}98 \quad \quad 0{,}55 \quad \quad -0{,}88 \quad \quad 0{,}05.
+$$
+
+::: {.typst-fig}
+![](../_figures/5f5100c06a85fd.svg){fig-alt="Figure du cours"}
+:::
+
+A ↔ [$0{,}98$]{.rep} B ↔ [$0{,}55$]{.rep} C ↔ [$-0{,}88$]{.rep} D ↔ [$0{,}05$]{.rep}
+:::
+:::

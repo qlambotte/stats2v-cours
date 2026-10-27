@@ -1,0 +1,158 @@
+---
+title: "Exercices"
+---
+
+<!-- GÉNÉRÉ par typweb à partir des notes Typst : NE PAS ÉDITER (les modifications seraient écrasées). -->
+
+::: {#exercice-3-1 data-sorte="exercice" data-num="3.1" data-page="18" data-phys="21" data-id="5UAA1.ex.009" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice 3.1]{.exo-titre} [[C3]{.exo-comp} ★☆☆]{.exo-meta}
+:::
+
+::: {.exo-corps}
+Pour chaque valeur de $r$, décris le nuage correspondant (sens et force du lien) :
+
+::: {.colonnes style="--n:2"}
+- $r = 0{,}97$
+- $r = -0{,}4$
+- $r = -0{,}99$
+- $r = 0{,}02$
+:::
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Revois la *Définition* de $r$ et l’encadré *À retenir* (échelle d’interprétation de $|r|$).
+
+## Indice 2 {.unlisted}
+
+*Question à te poser.* Que dit le **signe** ? Que dit la **valeur absolue** (proche de 1 ou de 0) ?
+
+## Indice 3 {.unlisted}
+
+*Étape.* Traduis chaque nombre en deux mots : un pour le sens, un pour la force.
+
+## Solution {.unlisted}
+
+(a) croissant, **très fort** (presque aligné). (b) décroissant, **faible**. (c) décroissant, **très fort** (quasi parfait). (d) **aucun** lien linéaire.
+
+## Pièges {.unlisted}
+
+Confondre signe (sens) et valeur absolue (force) ; croire que $r$ négatif = « pas de lien » (c’est un lien décroissant).
+:::
+:::
+
+::: {#exercice-3-2 data-sorte="exercice" data-num="3.2" data-page="18" data-phys="21" data-id="5UAA1.ex.010" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice 3.2]{.exo-titre} [[C4]{.exo-comp} ★★☆]{.exo-meta}
+:::
+
+::: {.exo-corps}
+On observe une corrélation positive forte entre le nombre de coups de soleil et le nombre de noyades, semaine après semaine, sur une plage.
+
+::: {.colonnes style="--n:2"}
+- Est-il raisonnable de dire que les coups de soleil provoquent les noyades ?
+- Quelle **variable cachée** explique le lien ?
+- Propose une phrase correcte pour décrire la situation.
+:::
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Revois l’encadré *À retenir* (cause / variable cachée / coïncidence) et la *Remarque* finale du cours.
+
+## Indice 2 {.unlisted}
+
+*Question à te poser.* Qu’est-ce qui augmente **à la fois** les coups de soleil et la fréquentation de l’eau ?
+
+## Indice 3 {.unlisted}
+
+*Étape.* Cherche un facteur météo/saisonnier commun aux deux.
+
+## Solution {.unlisted}
+
+(a) Non. (b) La **chaleur** (ou l’affluence estivale) : quand il fait chaud, il y a plus de coups de soleil **et** plus de baigneurs, donc plus de noyades. (c) « Coups de soleil et noyades augmentent ensemble parce qu’ils dépendent tous deux de la chaleur. »
+
+## Pièges {.unlisted}
+
+Chercher un lien direct entre les deux variables au lieu d’une **cause commune**.
+:::
+:::
+
+::: {#exercice-3-3 data-sorte="exercice" data-num="3.3" data-page="18" data-phys="21" data-id="5UAA1.ex.011" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice 3.3]{.exo-titre} [[C4]{.exo-comp} ★★☆]{.exo-meta}
+:::
+
+::: {.exo-corps}
+Un article titre : « Les villes qui comptent le plus de policiers sont celles où l’on enregistre le plus de délits : la police serait-elle inefficace ? » En t’appuyant sur la notion de variable cachée, explique en quelques lignes pourquoi ce titre confond corrélation et causalité.
+
+::: {.rep-bloc}
+Les grandes villes ont mécaniquement **plus d’habitants**, donc à la fois plus de délits *et* plus de policiers. La taille de la ville est la **variable cachée** qui gonfle les deux nombres ; elle ne dit rien sur l’efficacité de la police. Comparer des *taux* (délits pour $1000$ habitants) serait plus honnête.
+:::
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Revois l’exemple de la **variable cachée** (grande ville) dans l’encadré *À retenir*.
+
+## Indice 2 {.unlisted}
+
+*Question à te poser.* Qu’ont en commun les villes qui ont beaucoup de policiers **et** beaucoup de délits ? Comparer des **nombres** ou des **taux** change-t-il la lecture ?
+
+## Indice 3 {.unlisted}
+
+*Étape.* Pense à ce que « grande ville » implique pour les **deux** nombres.
+
+## Solution {.unlisted}
+
+Les grandes villes ont mécaniquement **plus d’habitants**, donc plus de délits *et* plus de policiers : la **taille de la ville** est la variable cachée qui gonfle les deux nombres. Elle ne dit rien sur l’efficacité de la police. Comparer des **taux** (délits pour 1000 habitants) serait plus honnête.
+
+## Pièges {.unlisted}
+
+Lire une causalité (« la police cause / ne réduit pas les délits ») dans une simple corrélation ; comparer des effectifs bruts entre villes de tailles très différentes.
+:::
+:::
+
+::: {#exercice-3-4 data-sorte="exercice" data-num="3.4" data-page="19" data-phys="22" data-id="5UAA1.ex.012" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice 3.4]{.exo-titre} [[A4]{.exo-comp} ★★☆]{.exo-meta}
+:::
+
+::: {.exo-corps}
+Reprends les huit pays de l’exercice du chapitre 2 (PIB par habitant et espérance de vie). À la calculatrice, calcule le coefficient de corrélation. Le lien est-il assez fort pour qu’une droite d’ajustement soit justifiée ?
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Revois la *Définition* de $r$ et l’échelle d’interprétation (*À retenir*).
+
+## Indice 2 {.unlisted}
+
+*Question à te poser.* En mode statistique à deux variables, quelle touche donne $r$ ? Une valeur autour de $0{,}7$ correspond à quel niveau de lien ?
+
+## Indice 3 {.unlisted}
+
+*Étape.* Saisis les huit couples, lis $r$, puis situe-le sur l’échelle.
+
+## Solution {.unlisted}
+
+$r \approx 0{,}70$ : lien **moyen à fort**, positif. Une droite d’ajustement est **acceptable** mais imparfaite — le nuage plafonne et les États-Unis tirent $r$ vers le bas. À utiliser avec prudence.
+
+## Pièges {.unlisted}
+
+Conclure « corrélation forte donc la richesse **cause** la longévité » : $r$ ne dit rien de la cause.
+:::
+:::

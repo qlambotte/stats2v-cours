@@ -1,0 +1,163 @@
+---
+title: "Exercices"
+---
+
+Dévoile les **coups de pouce** un par un — *théorie → question → étape → solution →
+pièges* — seulement si tu bloques.
+
+::: {.callout-caution .exo title="Exercice|Socle|1|A2"}
+On donne cinq points, déjà rangés : $(1\,;\,2), (2\,;\,5), (3\,;\,5), (4\,;\,8),
+(5\,;\,10)$. (Le point du milieu $(3\,;\,5)$ est mis de côté pour équilibrer les groupes.)
+
+(a) Calcule $G_1$ (deux premiers points) et $G_2$ (deux derniers).
+(b) Détermine l'équation de la **droite de Mayer**.
+(c) Vérifie qu'elle passe (presque) par le point moyen $G$ des cinq points.
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+
+## Indice 1
+Revois la *Définition — droite de Mayer* et l'*Exemple — Mayer sur l'écart salarial*.
+
+## Indice 2
+*Question à te poser.* Comment obtient-on le point moyen d'un petit groupe ? Puis, avec
+deux points, comment calcule-t-on une pente $\Delta y / \Delta x$ ?
+
+## Indice 3
+*Étape.* $G_1 = \left(\tfrac{1+2}{2}\,;\,\tfrac{2+5}{2}\right)$ ; de même $G_2$ avec les
+deux derniers. Ensuite $a = \dfrac{y_{G_2} - y_{G_1}}{x_{G_2} - x_{G_1}}$.
+
+## Solution
+$G_1 = (1{,}5\,;\,3{,}5)$, $G_2 = (4{,}5\,;\,9)$.
+$a = \dfrac{9 - 3{,}5}{4{,}5 - 1{,}5} = \dfrac{5{,}5}{3} \approx 1{,}83$ ; via $G_1$ :
+$b = 3{,}5 - 1{,}83\cdot 1{,}5 \approx 0{,}75$. Donc $y \approx 1{,}83\,x + 0{,}75$.
+Point moyen des cinq : $G(3\,;\,6)$, et $1{,}83\cdot 3 + 0{,}75 \approx 6{,}25$ : la
+droite passe tout près de $G$. ✓
+
+## Pièges
+« Séparer » un couple entre les deux groupes ; classer selon $y$ au lieu de $x$.
+
+:::
+:::
+
+::: {.callout-caution .exo title="Exercice|Socle|2|A3"}
+Reprends les cinq points précédents. Dresse un tableau à colonnes $x_i$, $y_i$, $x_i^2$,
+$x_i y_i$ (**quatre colonnes suffisent** pour la pente), calcule
+$\operatorname{variance}(x)$ et $\operatorname{cov}(x,y)$ par les **formules développées**,
+puis déduis-en la **droite de régression**. Compare sa pente à celle de Mayer.
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+
+## Indice 1
+Revois les *Propriétés — pente de la droite de régression* et *formules de calcul
+développées*, ainsi que l'*Exemple — la pente depuis un seul tableau*.
+
+## Indice 2
+*Question à te poser.* Quelles sommes te faut-il pour la variance ($\sum x^2$) et pour la
+covariance ($\sum xy$) ? Que valent $\overline{x}$ et $\overline{y}$ ?
+
+## Indice 3
+*Étape.* $\operatorname{variance}(x) = \dfrac{\sum x^2}{N} - \overline{x}^{\,2}$ et
+$\operatorname{cov}(x,y) = \dfrac{\sum xy}{N} - \overline{x}\,\overline{y}$, puis
+$a = \operatorname{cov}/\operatorname{variance}(x)$ et $b = \overline{y} - a\overline{x}$.
+
+## Solution
+$\sum x = 15,\ \sum y = 30,\ \sum x^2 = 55,\ \sum xy = 109,\ N = 5$ ;
+$\overline{x} = 3,\ \overline{y} = 6$.
+$\operatorname{variance}(x) = \tfrac{55}{5} - 9 = 2$ ;
+$\operatorname{cov}(x,y) = \tfrac{109}{5} - 18 = 3{,}8$.
+$a = \tfrac{3{,}8}{2} = 1{,}9$ ; $b = 6 - 1{,}9\cdot 3 = 0{,}3$. Donc $y = 1{,}9\,x +
+0{,}3$ — pente très proche de celle de Mayer ($1{,}83$).
+
+## Pièges
+Diviser $\sum x^2$ par $N$ mais oublier de retrancher $\overline{x}^{\,2}$ ; confondre
+$\sum x^2$ (somme des carrés) et $(\sum x)^2$ (carré de la somme).
+
+:::
+:::
+
+::: {.callout-caution .exo title="Exercice|Renforcement|2|C5"}
+Un camarade trace « au jugé » une droite qui passe **au-dessus de tous** les points d'un
+nuage. En raisonnant sur les **résidus**, explique pourquoi ce ne peut pas être la droite
+des moindres carrés.
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+
+## Indice 1
+Revois la *Définition — droite de régression (moindres carrés)* : que minimise-t-elle ?
+Rejoue la figure interactive du cours.
+
+## Indice 2
+*Question à te poser.* Si la droite est au-dessus de tous les points, quel est le **signe**
+de chaque résidu ? En **descendant** la droite, la somme des carrés augmente-t-elle ou
+diminue-t-elle ?
+
+## Indice 3
+*Étape.* Compare la somme des carrés avant et après avoir abaissé la droite vers le nuage.
+
+## Solution
+Si la droite est au-dessus de tous les points, **tous** les résidus ont le même signe et
+sont grands. En abaissant la droite vers le nuage, on **réduit** chaque écart, donc la
+**somme des carrés diminue** : la droite de départ n'était donc pas celle qui la rend
+minimale. La droite des moindres carrés laisse forcément des points **de part et
+d'autre** (et passe par $G$).
+
+## Pièges
+Croire qu'« au-dessus » veut dire « proche » ; oublier que c'est la somme des **carrés**
+qu'on minimise, pas le nombre de points touchés.
+
+:::
+:::
+
+::: {.callout-caution .exo title="Exercice|Transfert|2|A4"}
+Huit pays (Our World in Data, 2022), $x$ = PIB/hab. (milliers de \$), $y$ = espérance de
+vie.
+
+| $x$ | 7,8 | 14,6 | 19,2 | 27,4 | 32,5 | 39,1 | 46,6 | 58,5 |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| $y$ | 71,7 | 74,9 | 78,2 | 77,6 | 77,9 | 82,5 | 80,6 | 78,0 |
+
+(a) À la calculatrice (ou au tableur), donne l'équation de la **droite de régression**.
+(b) La pente est positive : qu'est-ce que cela signifie concrètement ?
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+
+## Indice 1
+Revois l'*Exemple — la pente depuis un seul tableau* : la calculatrice applique exactement
+ces formules.
+
+## Indice 2
+*Question à te poser.* En mode statistique à deux variables, quelles touches donnent $a$
+et $b$ ? Une pente de « $0{,}14$ » se lit : quand $x$ augmente de **1**, de combien
+augmente $y$ ?
+
+## Indice 3
+*Étape.* Saisis les huit couples, lis la régression linéaire $ax + b$, puis traduis $a$
+en « années gagnées par millier de dollars ».
+
+## Solution
+Environ $y \approx 0{,}14\,x + 73{,}5$. La pente $0{,}14$ signifie qu'en moyenne, **1000
+\$ de PIB/hab. en plus s'accompagnent d'environ 0,14 année d'espérance de vie en plus**
+— sur cet échantillon, et sans que cela prouve une cause (chapitre 3).
+
+```{=html}
+<div class="stat-plot" data-mode="regression"
+     data-points="[[7.8,71.7],[14.6,74.9],[19.2,78.2],[27.4,77.6],[32.5,77.9],[39.1,82.5],[46.6,80.6],[58.5,78.0]]"
+     data-xmin="0" data-xmax="65" data-ymin="60" data-ymax="90"
+     data-xlabel="PIB/hab." data-ylabel="Espér."
+     data-caption="Droite de régression des huit pays (r ≈ 0,70)."></div>
+```
+
+## Pièges
+Donner la pente « à l'envers » (confondre $a$ et $b$) ; conclure à une **cause** alors
+qu'on n'a qu'une **corrélation**.
+
+:::
+:::

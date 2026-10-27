@@ -1,0 +1,4 @@
+Vérification — Statistiques à deux variables
+16 exercices, 49 encadrés, 11 objectifs — 1 point à voir
+
+! aucun encadré n'a de numéro de page du PDF : lancer « typweb pdf » (bulle « page N » absente)

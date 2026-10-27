@@ -1,0 +1,15 @@
+---
+title: "Pourquoi ajuster ?"
+---
+
+<!-- GÉNÉRÉ par typweb à partir des notes Typst : NE PAS ÉDITER (les modifications seraient écrasées). -->
+
+::: {#cadre-19 .cadre-info}
+Résumer un nuage par une droite $y = a x + b$, c’est utile pour trois raisons :
+
+- **décrire** la tendance d’un seul coup ($a$ dit dans quel sens et à quelle vitesse $y$ évolue quand $x$ augmente) ;
+- **prévoir** une valeur de $y$ pour un $x$ non observé (chapitre 4) ;
+- **comparer** deux situations à l’aide d’un même repère.
+:::
+
+Mais attention : ajuster n’a de sens que si le nuage est *à peu près* aligné. Forcer une droite sur un nuage sans tendance ne donne rien d’utile — nous apprendrons au chapitre 3 à mesurer si le lien est assez fort pour que la droite soit crédible.

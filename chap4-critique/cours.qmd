@@ -1,0 +1,87 @@
+---
+title: "Le cours"
+---
+
+Une droite d'ajustement ne sert pas qu'à décrire : elle permet de **prévoir** une valeur
+là où on n'a pas mesuré. Mais toute prévision a ses limites.
+
+## Prévoir : interpolation et extrapolation
+
+::: {.definition title="interpolation, extrapolation"}
+À partir de la droite de régression $y = ax + b$, on estime un $y$ pour un $x$ non mesuré.
+
+- **Interpoler**, c'est estimer à l'**intérieur** de l'intervalle des données : assez sûr.
+- **Extrapoler**, c'est estimer à l'**extérieur** (avant la première ou après la dernière
+  donnée) : beaucoup plus risqué.
+:::
+
+::: {.exemple title="prévoir l'écart salarial"}
+Droite du chapitre 2 : $y \approx -0{,}57\,t + 11{,}1$ (avec $t$ = année − 2006, données
+2006–2022).
+
+**Interpolation** — en 2013 ($t = 7$) : $y \approx -0{,}57\times 7 + 11{,}1 \approx 7{,}1\,\%$.
+
+**Extrapolation** — écart *nul* : $0 = -0{,}57\,t + 11{,}1 \Rightarrow t \approx 19{,}5$,
+soit vers **2025–2026**. On sort de l'intervalle des données.
+:::
+
+La droite ci-dessous est prolongée au-delà de la dernière donnée (2022, $t = 16$) : on voit
+où elle **coupe l'axe**.
+
+```{=html}
+<div class="stat-plot" data-mode="regression"
+     data-points="[[0,9.5],[4,10.2],[9,6.4],[11,5.8],[14,3.2],[16,0.7]]"
+     data-xmin="0" data-xmax="20" data-ymin="0" data-ymax="12"
+     data-xlabel="t (années)" data-ylabel="écart %"
+     data-caption="La droite prolongée atteint 0 vers t ≈ 19,5 (année ≈ 2025) — une extrapolation."></div>
+```
+
+## Les limites de l'extrapolation
+
+::: {.aretenir}
+Prolonger une droite suppose que la tendance **continue à l'identique** — jamais garanti :
+
+- la tendance peut **ralentir** ou se **stabiliser** (l'écart pourrait s'approcher de 0
+  sans l'atteindre) ;
+- un chiffre proche de 0 peut **cacher** d'autres inégalités : l'écart *horaire* non ajusté
+  ignore le temps partiel (surtout féminin), la ségrégation des métiers, le plafond de
+  verre ; sur les **revenus annuels**, l'écart reste bien plus élevé ;
+- le nuage lui-même n'est pas parfaitement droit (le point de 2010 remonte).
+
+Une extrapolation est une **hypothèse**, pas une certitude.
+:::
+
+## Un vrai document à critiquer
+
+La statistique à deux variables sert aussi à **trancher des débats de société** avec des
+chiffres. Voici une étude belge récente.
+
+::: {.exemple title="tester la discrimination à l'embauche"}
+Le **testing par correspondance** envoie à de vraies offres des paires de candidatures
+**identiques** (mêmes diplômes, même expérience) qui ne diffèrent que par **un** détail —
+ici l'origine suggérée par le nom — puis compare les taux de réponse.
+
+À Bruxelles, 864 candidatures (432 paires) ont été envoyées entre avril 2023 et février
+2024 :
+
+- taux de réponse positive **global** : 36 % ;
+- un candidat d'origine **marocaine** (hors UE) reçoit **9,5 points de pourcentage** de
+  réponses positives **en moins** qu'un candidat d'origine belge, à CV identique ;
+- un candidat d'origine **polonaise** (UE) : **aucune** discrimination détectée.
+
+*Source : I. Tobback, M. Barslund, S. Baert & P.-P. Verhaeghe, « Discrimination sur le
+marché du travail bruxellois », Service public régional de Bruxelles, 2024.*
+:::
+
+::: {.propriete title="quand la corrélation devient une cause"}
+Un simple nuage ne prouve pas la causalité (chapitre 3). Mais un **testing** est une
+**expérience** : comme les deux CV sont identiques et que seule l'origine change, il n'y a
+plus de variable cachée possible. La différence observée peut alors être **attribuée** à
+l'origine. C'est la force d'une expérience bien construite sur une simple observation.
+:::
+
+::: {.remarque}
+Garde en tête les **limites** : l'étude porte sur certains secteurs, la région
+bruxelloise, une période donnée, et ne mesure que le **premier tri** des candidatures.
+Les chiffres valent pour cet échantillon.
+:::

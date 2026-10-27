@@ -1,0 +1,19 @@
+---
+title: "Le point moyen, pivot de l’ajustement"
+---
+
+<!-- GÉNÉRÉ par typweb à partir des notes Typst : NE PAS ÉDITER (les modifications seraient écrasées). -->
+
+Rappelle-toi le **point moyen** $G(\overline{t} ; \overline{y})$. Il joue un rôle central ici :
+
+::: {#propriete-2-1 data-sorte="propriete" data-num="2.1" data-page="8" data-phys="11" data-id="5UAA1.point-moyen-est-droite" data-type="propriete" data-tags="" .theo .theo-propriete}
+::: {.theo-head}
+**Propriété 2.1** — le point moyen est sur la droite
+:::
+
+::: {.theo-body}
+Toute droite d’ajustement raisonnable — qu’on la construise par la méthode de Mayer ou par celle des moindres carrés — **passe par le point moyen** $G$. C’est le point d’équilibre du nuage.
+:::
+:::
+
+Pour notre série : $\overline{t} = 54 \div 6 = 9$ et $\overline{y} = 35{,}8 \div 6 \approx 5{,}97$. Donc $G(9 ; 5{,}97)$.

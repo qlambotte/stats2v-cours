@@ -1,0 +1,156 @@
+---
+title: "Exercices"
+---
+
+<!-- GÉNÉRÉ par typweb à partir des notes Typst : NE PAS ÉDITER (les modifications seraient écrasées). -->
+
+::: {#exercice-4-1 data-sorte="exercice" data-num="4.1" data-page="23" data-phys="26" data-id="5UAA1.ex.013" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice 4.1]{.exo-titre} [[A5]{.exo-comp} ★☆☆]{.exo-meta}
+:::
+
+::: {.exo-corps}
+Une droite de régression relie le nombre d’heures de révision $x$ à la note $y$ (sur $20$) : $y = 1{,}5 x + 6$, établie pour des élèves ayant révisé de $1$ à $8$ heures.
+
+::: {.colonnes style="--n:2"}
+- Estime la note d’un élève ayant révisé $5$ h. Interpolation ou extrapolation ?
+- Le modèle prévoit-il une note correcte pour $12$ h de révision ? Commente.
+:::
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Revois la *Définition — interpolation, extrapolation* et l’encadré *À retenir* sur les limites.
+
+## Indice 2 {.unlisted}
+
+*Question à te poser.* 5 h et 12 h sont-ils **dans** l’intervalle observé (1 à 8 h) ou **dehors** ? Que vaut $y$ quand on remplace $x$ ?
+
+## Indice 3 {.unlisted}
+
+*Étape.* Calcule $1{,}5 \times 5 + 6$, puis $1{,}5 \times 12 + 6$, et regarde si le résultat reste réaliste (une note dépasse-t-elle 20 ?).
+
+## Solution {.unlisted}
+
+(a) $y = 1{,}5 \times 5 + 6 = 13{,}5$ : **interpolation** (5 est entre 1 et 8), fiable. (b) $y = 1{,}5 \times 12 + 6 = 24$ : **extrapolation** (12 \> 8) et **impossible** (une note ne dépasse pas 20). Le modèle linéaire ne tient plus si loin.
+
+## Pièges {.unlisted}
+
+Appliquer la droite sans se demander si le $x$ est dans l’intervalle ; accepter un résultat absurde (note \> 20).
+:::
+:::
+
+::: {#exercice-4-2 data-sorte="exercice" data-num="4.2" data-page="23" data-phys="26" data-id="5UAA1.ex.014" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice 4.2]{.exo-titre} [[T1]{.exo-comp} ★★☆]{.exo-meta}
+:::
+
+::: {.exo-corps}
+Un journal affiche deux graphiques du *même* jeu de données. Sur le premier, l’axe vertical va de $0$ à $100$ ; la courbe paraît presque plate. Sur le second, l’axe vertical va de $48$ à $52$ ; la même courbe paraît grimper en flèche.
+
+::: {.colonnes style="--n:2"}
+- Les données sont-elles différentes ? Qu’est-ce qui change ?
+- Quel graphique est trompeur, et pourquoi ?
+- Quelle règle proposerais-tu pour un axe vertical honnête ?
+:::
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Revois l’esprit critique du chapitre : un même chiffre peut être présenté de façons très différentes.
+
+## Indice 2 {.unlisted}
+
+*Question à te poser.* Qu’est-ce qui change entre les deux images : les **données** ou l’**échelle** ? Un petit écart sur un axe très « zoomé » paraît-il grand ?
+
+## Indice 3 {.unlisted}
+
+*Étape.* Compare l’amplitude de l’axe (0–100 vs 48–52) à la taille réelle des variations.
+
+## Solution {.unlisted}
+
+(a) Non : **mêmes données**, seule l’**échelle** de l’axe change. (b) Le second est **trompeur** : en zoomant (48–52), il **exagère** des variations minuscules. (c) Un axe honnête part en général de **0** (ou indique clairement toute troncature) et garde une échelle proportionnée aux variations réelles.
+
+## Pièges {.unlisted}
+
+Croire qu’un graphique « ne peut pas mentir » ; juger une tendance sans regarder les **graduations** de l’axe.
+:::
+:::
+
+::: {#exercice-4-3 data-sorte="exercice" data-num="4.3" data-page="23" data-phys="26" data-id="5UAA1.ex.015" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice 4.3]{.exo-titre} [[T1]{.exo-comp} ★★★]{.exo-meta}
+:::
+
+::: {.exo-corps}
+Pour chacune des affirmations, dis s’il s’agit d’une **corrélation** ou d’une **causalité** établie, et justifie en une phrase.
+
+- « Dans un testing, à CV identique, changer le prénom fait chuter le taux de rappel. »
+- « Les pays où l’on consomme le plus de chocolat comptent le plus de prix Nobel. »
+- « Après avoir augmenté le nombre de contrôles fiscaux, l’administration a récupéré davantage d’impôts éludés. »
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Revois la *Propriété — quand la corrélation devient une cause* (l’**expérience** contrôlée) et l’encadré du chapitre 3 (cause / variable cachée / coïncidence).
+
+## Indice 2 {.unlisted}
+
+*Question à te poser.* Dans chaque cas : a-t-on **tout tenu égal** sauf un facteur (→ expérience → cause), ou seulement **observé** deux chiffres qui vont ensemble ?
+
+## Indice 3 {.unlisted}
+
+*Étape.* Repère laquelle des trois situations est un **test contrôlé** (une seule chose change).
+
+## Solution {.unlisted}
+
+(a) **Causalité** : c’est une expérience (CV identiques, seul le prénom change) → l’origine est bien la cause. (b) **Corrélation** : variable cachée (la **richesse** du pays gonfle les deux) — aucun lien de cause. (c) **Prudence** : corrélation plausible, mais d’autres facteurs (conjoncture, nouvelles lois) ont pu jouer ; sans expérience contrôlée, la cause n’est pas prouvée.
+
+## Pièges {.unlisted}
+
+Prendre toute succession dans le temps pour une cause (« après, donc à cause de ») ; oublier qu’un testing **isole** le facteur, contrairement à une simple observation.
+:::
+:::
+
+::: {#exercice-4-4 data-sorte="exercice" data-num="4.4" data-page="23" data-phys="26" data-id="5UAA1.ex.016" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice 4.4]{.exo-titre} [[T1]{.exo-comp} ★★★]{.exo-meta}
+:::
+
+::: {.exo-corps}
+On te donne le nuage « PIB par habitant – espérance de vie » du chapitre 1 et sa droite de régression. Rédige un court paragraphe (5 – 6 lignes) qui : décrit le lien, donne l’ordre de grandeur du coefficient de corrélation attendu, et **nuance** toute conclusion trop rapide du type « il suffit d’enrichir un pays pour que ses habitants vivent plus longtemps ».
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Mobilise les quatre chapitres : décrire un nuage (ch. 1), l’ajuster (ch. 2), $r$ (ch. 3), corrélation vs causalité et limites (ch. 4).
+
+## Indice 2 {.unlisted}
+
+*Question à te poser.* Le nuage est-il croissant ? linéaire ou en plateau ? $r$ fort ou moyen ? Peut-on parler de **cause** à partir d’une observation ?
+
+## Indice 3 {.unlisted}
+
+*Étape.* Structure ton paragraphe : (1) sens + forme, (2) ordre de grandeur de $r$, (3) la nuance (plateau, exceptions, corrélation ≠ causalité).
+
+## Solution {.unlisted}
+
+Le nuage est **croissant** mais **non linéaire** : l’espérance de vie monte vite pour les pays pauvres puis **plafonne**. Le lien est **moyen à fort** ($r$ de l’ordre de $0{,}7$), avec des **exceptions** nettes (États-Unis). On observe donc une **corrélation**, pas une preuve de **cause** : enrichir un pays *s’accompagne* souvent d’une meilleure santé, mais d’autres facteurs comptent (système de santé, inégalités, mode de vie), et au-delà d’un certain revenu le gain devient minime.
+
+## Pièges {.unlisted}
+
+Conclure à une causalité ; oublier le plateau et les points atypiques ; annoncer un $r$ « parfait » alors que le nuage n’est pas une droite.
+:::
+:::

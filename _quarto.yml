@@ -1,0 +1,93 @@
+# GÉNÉRÉ par typweb à partir de typweb.toml : NE PAS ÉDITER (modifier typweb.toml).
+project:
+  type: book
+  output-dir: _book
+  # le contenu est régénéré depuis les notes Typst à chaque rendu / aperçu
+  pre-render: python3 ../../../typweb/typweb.py contenu
+  resources:
+    - js/*.js
+    - js/*.css
+    - js/*.json
+    - index.json
+    - sw.js
+    - stats.pdf
+
+book:
+  title: "Statistiques à deux variables"
+  subtitle: "Cours & exercices — 5e, 4 périodes (5UAA1)"
+  author: "Quentin Lambotte"
+  date: today
+  date-format: "YYYY"
+  reader-mode: false
+  search: true
+  site-url: "https://qlambotte.github.io/stats2v-cours/"
+  sidebar:
+    style: docked
+    collapse-level: 1
+    pinned: true
+  chapters:
+    - index.qmd
+    - objectifs.qmd
+    - part: ch1-deux-variables-un-nu/index.qmd
+      chapters:
+        - ch1-deux-variables-un-nu/1-reactiver-une-variable-une-moyenne.qmd
+        - ch1-deux-variables-un-nu/2-une-serie-statistique-a-deux.qmd
+        - ch1-deux-variables-un-nu/3-le-nuage-de-points.qmd
+        - ch1-deux-variables-un-nu/4-le-point-moyen.qmd
+        - ch1-deux-variables-un-nu/5-decrire-un-nuage.qmd
+        - ch1-deux-variables-un-nu/6-exercices.qmd
+    - part: ch2-ajuster-un-nuage-par/index.qmd
+      chapters:
+        - ch2-ajuster-un-nuage-par/1-pourquoi-ajuster.qmd
+        - ch2-ajuster-un-nuage-par/2-une-serie-qui-evolue-lecart.qmd
+        - ch2-ajuster-un-nuage-par/3-le-point-moyen-pivot-de.qmd
+        - ch2-ajuster-un-nuage-par/4-la-droite-de-mayer.qmd
+        - ch2-ajuster-un-nuage-par/5-faire-parler-les-ecarts-a.qmd
+        - ch2-ajuster-un-nuage-par/6-la-methode-des-moindres-carres.qmd
+        - ch2-ajuster-un-nuage-par/7-exercices.qmd
+    - part: ch3-mesurer-la-liaison-l/index.qmd
+      chapters:
+        - ch3-mesurer-la-liaison-l/1-un-nombre-entre-1-et.qmd
+        - ch3-mesurer-la-liaison-l/2-lire-r-sur-un-nuage.qmd
+        - ch3-mesurer-la-liaison-l/3-calculer-r.qmd
+        - ch3-mesurer-la-liaison-l/4-correlation-nest-pas-causalite.qmd
+        - ch3-mesurer-la-liaison-l/5-exercices.qmd
+    - part: ch4-utiliser-un-ajusteme/index.qmd
+      chapters:
+        - ch4-utiliser-un-ajusteme/1-prevoir-interpolation-et-extrapolation.qmd
+        - ch4-utiliser-un-ajusteme/2-les-limites-de-lextrapolation.qmd
+        - ch4-utiliser-un-ajusteme/3-un-vrai-document-a-critiquer.qmd
+        - ch4-utiliser-un-ajusteme/4-exercices.qmd
+    - essentiel.qmd
+    - nouveautes.qmd
+    - mode-emploi.qmd
+  page-footer:
+    left: "Statistiques à deux variables — cours & exercices"
+    right: "© {{< meta book.author >}}"
+
+lang: fr
+
+format:
+  html:
+    theme:
+      - cosmo
+      - polices.scss
+      - theme.scss
+      - styles-essai.scss
+    include-in-header:
+      - _includes/theme-init.html
+    include-after-body:
+      - _includes/figures-data.html
+      - _includes/aides.html
+      - _includes/tools.html
+      - _includes/scripts.html
+      - _includes/styles-essai.html
+    toc: true
+    toc-title: "Sur cette page"
+    toc-depth: 3
+    number-sections: false
+    html-math-method: mathjax
+    grid:
+      sidebar-width: 300px
+      body-width: 880px
+      margin-width: 200px

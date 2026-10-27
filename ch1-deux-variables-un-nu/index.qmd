@@ -1,0 +1,16 @@
+---
+title: "Chapitre 1 — Deux variables, un nuage de points"
+---
+
+<!-- GÉNÉRÉ par typweb à partir des notes Typst : NE PAS ÉDITER (les modifications seraient écrasées). -->
+
+Jusqu’ici, la statistique que tu as pratiquée portait sur **une seule** grandeur à la fois : la taille des élèves d’une classe, le nombre de frères et sœurs, une série de notes… On la résumait par sa **moyenne**. Mais les questions intéressantes mettent souvent en jeu **deux** grandeurs mesurées sur les mêmes individus, et demandent si elles *vont ensemble* : un pays plus riche vit-il plus longtemps ? Réviser davantage fait-il monter la note ? Ce chapitre apprend à **voir** une telle relation ; les suivants apprendront à la **résumer**, à la **mesurer**, puis à la **critiquer**.
+
+## Sections
+
+1. [Réactiver : une variable, une moyenne](1-reactiver-une-variable-une-moyenne.qmd)
+2. [Une série statistique à deux variables](2-une-serie-statistique-a-deux.qmd)
+3. [Le nuage de points](3-le-nuage-de-points.qmd)
+4. [Le point moyen](4-le-point-moyen.qmd)
+5. [Décrire un nuage](5-decrire-un-nuage.qmd)
+6. [Exercices](6-exercices.qmd) []{.suivi-sec data-exos="1.1 1.2 1.3 1.4"}

@@ -1,0 +1,26 @@
+---
+title: "Ajuster un nuage par une droite"
+---
+
+Deuxième chapitre. Tu y trouveras :
+
+- **[Le cours](cours.qmd)** — droite de Mayer, covariance, méthode des moindres carrés,
+  avec une **figure interactive** où tu inclines la droite et vois la somme des carrés
+  des résidus varier ;
+- **[Les exercices](exercices.qmd)** — avec **coups de pouce** progressifs.
+
+## Objectifs de la séance
+
+À la fin du chapitre, tu es capable de…
+
+- **C2** — expliquer l'intérêt d'un ajustement ;
+- **A2** — déterminer l'équation d'une droite de Mayer ;
+- **C5** — expliquer le principe de la méthode des moindres carrés ;
+- **A3** — déterminer l'équation de la droite de régression (moindres carrés) ;
+- **A4** — utiliser la calculatrice ou un tableur pour un ajustement linéaire.
+
+::: {.callout-tip title="Manipule d'abord"}
+Dans le cours, fais bouger la droite de la figure interactive : cherche **à la main** la
+pente qui rend la somme des carrés des résidus la plus petite, puis compare à la droite
+des moindres carrés. Tu *verras* pourquoi la formule donne « la meilleure droite ».
+:::

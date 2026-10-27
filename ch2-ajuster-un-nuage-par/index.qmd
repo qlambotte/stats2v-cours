@@ -1,0 +1,17 @@
+---
+title: "Chapitre 2 — Ajuster un nuage par une droite"
+---
+
+<!-- GÉNÉRÉ par typweb à partir des notes Typst : NE PAS ÉDITER (les modifications seraient écrasées). -->
+
+Au chapitre précédent, on a appris à *voir* un nuage. Quand ses points s’organisent autour d’une tendance à peu près **droite**, on peut aller plus loin : tracer **une** droite qui résume le nuage. C’est l’**ajustement linéaire**. Une fois cette droite trouvée, elle remplace des dizaines de points par une seule équation — pratique pour décrire la tendance et, plus tard, faire des prévisions.
+
+## Sections
+
+1. [Pourquoi ajuster ?](1-pourquoi-ajuster.qmd)
+2. [Une série qui évolue : l’écart salarial](2-une-serie-qui-evolue-lecart.qmd)
+3. [Le point moyen, pivot de l’ajustement](3-le-point-moyen-pivot-de.qmd)
+4. [La droite de Mayer](4-la-droite-de-mayer.qmd)
+5. [Faire parler les écarts à la moyenne](5-faire-parler-les-ecarts-a.qmd)
+6. [La méthode des moindres carrés](6-la-methode-des-moindres-carres.qmd)
+7. [Exercices](7-exercices.qmd) []{.suivi-sec data-exos="2.1 2.2 2.3 2.4"}

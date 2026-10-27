@@ -1,0 +1,163 @@
+---
+title: "Exercices"
+---
+
+Chaque exercice porte une **catégorie** et une **difficulté** (★). Le bloc **Coups de
+pouce** est replié : dévoile les onglets un par un — *théorie → question → étape →
+solution → pièges* — seulement si tu en as besoin.
+
+::: {.callout-caution .exo title="Exercice|Socle|1|C1"}
+Un professeur relève, pour 6 élèves, le nombre d'heures de révision avant un test ($x$)
+et la note obtenue sur 20 ($y$).
+
+(a) Quelle est la **population** étudiée ? (b) Quels sont les deux **caractères** ?
+(c) Combien de **couples** la série compte-t-elle ? (d) Écris le couple d'un élève ayant
+révisé 3 h et obtenu 12.
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+
+## Indice 1
+Revois la *Définition — série statistique à deux variables* (population, individu,
+couple de données).
+
+## Indice 2
+*Question à te poser.* Sur **qui** ou **quoi** relève-t-on les mesures ? Et combien de
+nombres note-t-on **par** individu ?
+
+## Indice 3
+*Étape.* Un « couple » s'écrit $(x_i\,;\,y_i)$, dans l'ordre : d'abord la variable en
+abscisse, puis celle en ordonnée.
+
+## Solution
+(a) Les **6 élèves**. (b) Le **temps de révision** ($x$) et la **note** ($y$).
+(c) **6 couples**. (d) $(3\,;\,12)$.
+
+## Pièges
+Confondre la population (les individus) avec les variables (ce qu'on mesure) ; inverser
+l'ordre du couple.
+
+:::
+:::
+
+::: {.callout-caution .exo title="Exercice|Socle|2|A1"}
+On reprend six pays (Our World in Data, 2022) : $x$ = PIB/hab. (milliers de \$),
+$y$ = espérance de vie.
+
+| Pays | Éthiopie | Inde | Chine | Turquie | Belgique | Norvège |
+|:--|:--:|:--:|:--:|:--:|:--:|:--:|
+| $x$ | 2,3 | 7,8 | 19,2 | 27,4 | 41,9 | 88,4 |
+| $y$ | 66,9 | 71,7 | 78,2 | 77,6 | 81,2 | 82,6 |
+
+(a) Calcule $\overline{x}$ et $\overline{y}$. (b) Donne les coordonnées du point moyen
+$G$. (c) Décris le nuage en une phrase.
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+
+## Indice 1
+Revois la *Définition — point moyen* ($G(\overline{x}\,;\,\overline{y})$) et la section
+*Décrire un nuage*.
+
+## Indice 2
+*Question à te poser.* Comment obtient-on chaque moyenne ? Le nuage monte-t-il ou
+descend-il quand $x$ augmente ?
+
+## Indice 3
+*Étape.* $\overline{x} = \dfrac{2{,}3 + 7{,}8 + 19{,}2 + 27{,}4 + 41{,}9 + 88{,}4}{6}$ ;
+même principe pour $\overline{y}$.
+
+## Solution
+(a) $\overline{x} \approx 31{,}2$ ; $\overline{y} \approx 76{,}4$.
+(b) $G(31{,}2\,;\,76{,}4)$.
+(c) Nuage **croissant** : les pays plus riches vivent plutôt plus longtemps, mais la
+montée **ralentit** aux revenus élevés.
+
+```{=html}
+<div class="stat-plot" data-mode="nuage"
+     data-points="[[2.3,66.9],[7.8,71.7],[19.2,78.2],[27.4,77.6],[41.9,81.2],[88.4,82.6]]"
+     data-xmin="0" data-xmax="90" data-ymin="50" data-ymax="90"
+     data-xlabel="PIB/hab." data-ylabel="Espér."
+     data-caption="Le nuage et son point moyen G."></div>
+```
+
+## Pièges
+Oublier de diviser par le **bon** effectif (6) ; placer $G$ « au hasard » plutôt qu'aux
+deux moyennes.
+
+:::
+:::
+
+::: {.callout-caution .exo title="Exercice|Transfert|2|C3"}
+Décris le nuage ci-dessous : **sens**, **forme**, **dispersion**, et un éventuel **point
+atypique**.
+
+```{=html}
+<div class="stat-plot" data-mode="nuage"
+     data-points="[[5.1,54.1],[7.8,71.7],[14.6,74.9],[16.2,74.0],[19.2,78.2],[27.4,77.6],[29.0,81.2],[32.5,77.9],[38.3,84.1],[39.1,82.5],[41.9,81.2],[46.6,80.6],[58.5,78.0],[88.4,82.6]]"
+     data-xmin="0" data-xmax="90" data-ymin="50" data-ymax="90"
+     data-xlabel="PIB/hab." data-ylabel="Espér."></div>
+```
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+
+## Indice 1
+Revois l'encadré *À retenir — Décrire un nuage* (les quatre questions).
+
+## Indice 2
+*Question à te poser.* Quand $x$ augmente, que fait $y$ ? La montée est-elle régulière
+(droite) ou s'aplatit-elle (courbe) ? Un point est-il « loin » des autres ?
+
+## Indice 3
+*Étape.* Regarde d'abord l'allure générale (monte / descend), puis si c'est une droite
+ou une courbe, enfin les points isolés.
+
+## Solution
+**Sens** : croissant. **Forme** : pas une droite — ça monte vite puis **plafonne**
+(courbe). **Dispersion** : assez resserré, sauf exceptions. **Point atypique** : les
+**États-Unis** (58,5 ; 78,0), riches mais à l'espérance de vie modeste.
+
+## Pièges
+Dire « ça monte donc c'est une droite » : croissant ≠ linéaire. Oublier de repérer le
+point atypique.
+
+:::
+:::
+
+::: {.callout-caution .exo title="Exercice|Transfert|3|C2"}
+Un élève affirme : « Il suffit d'être riche pour vivre vieux. » En t'appuyant sur le
+**sens**, la **forme** et le **point atypique** du nuage des 14 pays (cours), explique en
+quelques lignes pourquoi cette phrase est trop simple.
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+
+## Indice 1
+Revois la section *Décrire un nuage* et la *Remarque* sur le point atypique (États-Unis).
+
+## Indice 2
+*Question à te poser.* « Aller ensemble » (corrélation) veut-il dire « suffire »
+(cause) ? La montée continue-t-elle indéfiniment, ou plafonne-t-elle ?
+
+## Indice 3
+*Étape.* Appuie chaque affirmation sur une observation du nuage : le sens (croissant),
+la forme (plateau), l'exception (États-Unis).
+
+## Solution
+Le nuage est bien **croissant** : un revenu plus élevé **s'accompagne** souvent d'une
+espérance de vie plus grande. Mais la relation **plafonne** (au-delà d'un certain revenu,
+on ne gagne presque plus d'années) et souffre d'**exceptions** nettes (États-Unis).
+« Aller ensemble » n'est pas « suffire » : d'autres facteurs jouent (système de santé,
+mode de vie, inégalités).
+
+## Pièges
+Transformer une **corrélation** (ils varient ensemble) en **cause** (l'un produit
+l'autre) — on y reviendra au chapitre 3.
+
+:::
+:::

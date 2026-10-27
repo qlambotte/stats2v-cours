@@ -1,0 +1,25 @@
+---
+title: "Calculer r"
+---
+
+<!-- GÉNÉRÉ par typweb à partir des notes Typst : NE PAS ÉDITER (les modifications seraient écrasées). -->
+
+::: {#exemple-3-1 data-sorte="exemple" data-num="3.1" data-page="17" data-phys="20" data-id="5UAA1.correlation-ecart-salarial" data-type="exemple" data-tags="" .theo .theo-exemple}
+::: {.theo-head}
+**Exemple 3.1** — la corrélation de l’écart salarial
+:::
+
+::: {.theo-body}
+Reprenons la série « écart salarial » du chapitre 2 (les six couples $(t ; y)$). À la calculatrice, on lit
+
+$$
+r \approx - 0{,}94.
+$$
+
+Le signe négatif confirme la **baisse** ; la valeur, très proche de $-1$, confirme que les points sont **bien alignés** : la droite de régression était donc pleinement justifiée. On peut le retrouver depuis le tableau du chapitre 2 : $\text{cov}(t, y) \approx - 17{,}3$, $\sigma_{t} = \sqrt{30{,}7} \approx 5{,}54$, $\sigma_{y} = \sqrt{279{,}62 \div 6 - 5{,}97^{2}} \approx 3{,}32$, d’où
+
+$$
+r = \frac{\text{cov}(t, y)}{\sigma_{t} \sigma_{y}} \approx \frac{- 17{,}3}{5{,}54 \times 3{,}32} \approx - 0{,}94.
+$$
+:::
+:::

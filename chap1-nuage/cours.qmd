@@ -1,0 +1,118 @@
+---
+title: "Le cours"
+---
+
+La statistique que tu connais porte sur **une** grandeur (une série de tailles, de
+notes…), résumée par sa **moyenne**. Les questions intéressantes mettent souvent en jeu
+**deux** grandeurs mesurées sur les mêmes individus, et demandent si elles *vont
+ensemble* : un pays plus riche vit-il plus longtemps ? Ce chapitre apprend à **voir**
+une telle relation.
+
+## Rappel : la moyenne
+
+::: {.definition title="moyenne"}
+La **moyenne** d'une série de $N$ valeurs $x_1, \dots, x_N$ est
+$$ \overline{x} = \frac{x_1 + x_2 + \dots + x_N}{N}. $$
+C'est la valeur qui **résume** la série : si toutes les valeurs étaient identiques, ce
+serait celle-là. À la calculatrice ou au tableur, on l'obtient directement.
+:::
+
+## Une série statistique à deux variables
+
+On relève, sur chaque pays, **deux** nombres à la fois : son revenu et son espérance de
+vie.
+
+::: {.definition title="série statistique à deux variables"}
+On étudie une **population** (ici : des pays). Sur chaque **individu**, on relève **deux**
+caractères chiffrés, $x$ et $y$. À chaque individu correspond un **couple** $(x_i\,;\,y_i)$.
+L'ensemble de ces couples est une **série statistique à deux variables**.
+:::
+
+Pour 14 pays, voici le **PIB par habitant** ($x$, en milliers de dollars) et
+l'**espérance de vie** ($y$, en années).
+
+| Pays | PIB/hab. (1000 \$) | Espér. de vie (ans) |
+|:--|:--:|:--:|
+| Nigéria | 5,1 | 54,1 |
+| Inde | 7,8 | 71,7 |
+| Brésil | 14,6 | 74,9 |
+| Mexique | 16,2 | 74,0 |
+| Chine | 19,2 | 78,2 |
+| Turquie | 27,4 | 77,6 |
+| Portugal | 29,0 | 81,2 |
+| Pologne | 32,5 | 77,9 |
+| Japon | 38,3 | 84,1 |
+| France | 39,1 | 82,5 |
+| Belgique | 41,9 | 81,2 |
+| Allemagne | 46,6 | 80,6 |
+| États-Unis | 58,5 | 78,0 |
+| Norvège | 88,4 | 82,6 |
+
+*Source : Our World in Data, « Life expectancy vs. GDP per capita », 2022 (PIB en
+dollars internationaux constants, Banque mondiale ; espérance de vie, UN WPP).*
+
+::: {.remarque}
+Le choix de $x$ et $y$ n'est pas neutre : on met en $x$ (abscisse) la variable qu'on
+soupçonne d'**expliquer** l'autre, et en $y$ (ordonnée) celle qu'on cherche à
+comprendre. Ici : la richesse ($x$) éclaire-t-elle l'espérance de vie ($y$) ?
+:::
+
+## Le nuage de points
+
+::: {.definition title="nuage de points"}
+Le **nuage de points** d'une série $(x_i\,;\,y_i)$ est l'ensemble des points de
+coordonnées $(x_i\,;\,y_i)$ placés dans un repère. Chaque point représente un individu.
+On ne relie **pas** les points.
+:::
+
+Voici le nuage des 14 pays. Le point cerclé de rouge est le **point moyen** $G$ (voir
+plus bas).
+
+```{=html}
+<div class="stat-plot" data-mode="nuage"
+     data-points="[[5.1,54.1],[7.8,71.7],[14.6,74.9],[16.2,74.0],[19.2,78.2],[27.4,77.6],[29.0,81.2],[32.5,77.9],[38.3,84.1],[39.1,82.5],[41.9,81.2],[46.6,80.6],[58.5,78.0],[88.4,82.6]]"
+     data-xmin="0" data-xmax="90" data-ymin="50" data-ymax="90"
+     data-xlabel="PIB/hab." data-ylabel="Espér."
+     data-caption="Espérance de vie selon le PIB par habitant (14 pays, 2022)."></div>
+```
+
+Le nuage **monte** globalement (relation croissante), mais pas en ligne droite : il monte
+vite pour les pays pauvres puis **plafonne**. Et un pays riche s'écarte nettement : les
+**États-Unis**, à l'espérance de vie plus basse que des pays bien moins riches.
+
+## Le point moyen
+
+::: {.definition title="point moyen"}
+Le **point moyen** d'une série à deux variables est le point $G$ de coordonnées
+$$ G(\overline{x}\,;\,\overline{y}), $$
+où $\overline{x}$ et $\overline{y}$ sont les moyennes des deux variables. Il marque le
+**centre** du nuage.
+:::
+
+::: {.exemple title="le point moyen des 14 pays"}
+À la calculatrice : $\overline{x} \approx 33{,}2$ (milliers de \$) et
+$\overline{y} \approx 77{,}0$ (ans). Donc $G(33{,}2\,;\,77{,}0)$ — c'est le « pays
+moyen » de la série.
+:::
+
+::: {.remarque}
+$G$ n'est pas forcément l'un des points du nuage : aucun pays réel n'a exactement
+$(33{,}2\,;\,77{,}0)$. C'est un point **calculé** qui résume l'ensemble. On le
+retrouvera au chapitre suivant : toute droite qui résume bien le nuage passe par $G$.
+:::
+
+## Décrire un nuage
+
+::: {.aretenir}
+Décrire un nuage, c'est le **lire**, pas le calculer. Quatre questions :
+
+- **Sens** — quand $x$ augmente, $y$ tend-il à augmenter (croissant), à diminuer
+  (décroissant), ou ni l'un ni l'autre ?
+- **Forme** — les points sont-ils proches d'une **droite** (relation linéaire) ou d'une
+  courbe ?
+- **Dispersion** — sont-ils **resserrés** autour de la tendance, ou **éparpillés** ?
+- **Points atypiques** — un individu s'écarte-t-il nettement du reste ?
+
+Si les points sont proches d'une droite, on pourra les **résumer** par une droite
+(chapitre 2) et **mesurer** la force du lien (chapitre 3).
+:::

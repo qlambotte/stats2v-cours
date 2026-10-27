@@ -1,0 +1,61 @@
+---
+title: "Un vrai document à critiquer"
+---
+
+<!-- GÉNÉRÉ par typweb à partir des notes Typst : NE PAS ÉDITER (les modifications seraient écrasées). -->
+
+La statistique à deux variables ne sert pas qu’à des courbes : elle sert à **trancher des débats de société** avec des chiffres. Voici une étude belge récente.
+
+::: {#exemple-4-2 data-sorte="exemple" data-num="4.2" data-page="22" data-phys="25" data-id="5UAA1.tester-discrimination-embauche" data-type="exemple" data-tags="" .theo .theo-exemple}
+::: {.theo-head}
+**Exemple 4.2** — tester la discrimination à l’embauche
+:::
+
+::: {.theo-body}
+Pour mesurer la discrimination, des chercheurs ont utilisé le **testing par correspondance** : ils envoient à de vraies offres d’emploi des paires de candidatures **identiques** (mêmes diplômes, même expérience), qui ne diffèrent que par *un* détail — ici, l’origine suggérée par le nom — puis comparent les taux de réponse positive.
+
+À Bruxelles, $864$ candidatures ($432$ paires) ont été envoyées entre avril 2023 et février 2024. Résultats :
+
+- taux de réponse positive **global** : $36 \%$ ;
+- un candidat d’origine **marocaine** (hors UE) reçoit $9{,}5$ points de pourcentage de réponses positives **en moins** qu’un candidat d’origine belge, à CV identique ;
+- un candidat d’origine **polonaise** (UE) : **aucune** discrimination détectée.
+
+Source : I. Tobback, M. Barslund, S. Baert & P.-P. Verhaeghe, *Discrimination sur le marché du travail bruxellois*, Service public régional de Bruxelles, 2024.
+:::
+:::
+
+::: {#propriete-4-1 data-sorte="propriete" data-num="4.1" data-page="22" data-phys="25" data-id="5UAA1.quand-correlation-devient-cause" data-type="propriete" data-tags="" .theo .theo-propriete}
+::: {.theo-head}
+**Propriété 4.1** — quand la corrélation devient une cause
+:::
+
+::: {.theo-body}
+Un simple nuage ne prouve pas la causalité (chapitre 3). Mais un **testing** est une **expérience** : comme les deux CV sont identiques et que seule l’origine change, il n’y a plus de variable cachée possible. La différence observée peut alors être **attribuée** à l’origine. C’est la force d’une expérience bien construite sur une simple observation.
+:::
+:::
+
+::: {#activite-4-2 data-sorte="activite" data-num="4.2" data-page="22" data-phys="25" data-id="5UAA1.lire-etude-citoyen" data-type="activite" data-tags="" .theo .theo-activite}
+::: {.theo-head}
+**Activité 4.2** — lire l’étude en citoyen
+:::
+
+::: {.theo-body}
+a) Que signifie concrètement « $9{,}5$ points de pourcentage en moins » ?
+
+::: {.rep-bloc}
+À candidature strictement identique, sur $100$ envois, un candidat d’origine marocaine reçoit environ $9{,}5$ réponses positives de moins qu’un candidat d’origine belge. L’origine, seule différence, en est donc la cause.
+:::
+
+b) Pourquoi peut-on ici parler de **cause**, alors qu’un nuage ne le permettrait pas ?
+
+::: {.rep-bloc}
+Parce que tout le reste est tenu **identique** : c’est une expérience contrôlée, pas une simple observation. La variable « origine » est isolée, donc aucune variable cachée n’explique l’écart.
+:::
+
+c) Quelles **limites** garderais-tu en tête avant de généraliser ?
+
+::: {.rep-bloc}
+L’étude porte sur certains secteurs, sur la région bruxelloise et sur une période donnée ; elle ne mesure que le *premier tri* des candidatures, pas toute la carrière. Les chiffres restent valables pour cet échantillon.
+:::
+:::
+:::

@@ -1,0 +1,11 @@
+---
+title: "Quoi de neuf ?"
+subtitle: "Ce qui a changé dans le cours en ligne"
+---
+
+<!-- GÉNÉRÉ par typweb à partir des notes Typst : NE PAS ÉDITER (les modifications seraient écrasées). -->
+
+## 30/09/2026
+
+- Première version en ligne du cours.
+

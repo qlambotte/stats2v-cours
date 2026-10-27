@@ -1,0 +1,153 @@
+---
+title: "Exercices"
+---
+
+Dévoile les **coups de pouce** un par un — *théorie → question → étape → solution →
+pièges*.
+
+::: {.callout-caution .exo title="Exercice|Socle|1|A5"}
+Une droite de régression relie le nombre d'heures de révision $x$ à la note $y$ (sur 20) :
+$y = 1{,}5\,x + 6$, établie pour des élèves ayant révisé de 1 à 8 heures.
+
+(a) Estime la note pour 5 h de révision. Interpolation ou extrapolation ?
+(b) Le modèle prévoit-il une note correcte pour 12 h ? Commente.
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+
+## Indice 1
+Revois la *Définition — interpolation, extrapolation* et l'encadré *À retenir* sur les
+limites.
+
+## Indice 2
+*Question à te poser.* 5 h et 12 h sont-ils **dans** l'intervalle observé (1 à 8 h) ou
+**dehors** ? Que vaut $y$ quand on remplace $x$ ?
+
+## Indice 3
+*Étape.* Calcule $1{,}5\times 5 + 6$, puis $1{,}5\times 12 + 6$, et regarde si le résultat
+reste réaliste (une note dépasse-t-elle 20 ?).
+
+## Solution
+(a) $y = 1{,}5\times 5 + 6 = 13{,}5$ : **interpolation** (5 est entre 1 et 8), fiable.
+(b) $y = 1{,}5\times 12 + 6 = 24$ : **extrapolation** (12 > 8) et **impossible** (une note
+ne dépasse pas 20). Le modèle linéaire ne tient plus si loin.
+
+## Pièges
+Appliquer la droite sans se demander si le $x$ est dans l'intervalle ; accepter un
+résultat absurde (note > 20).
+
+:::
+:::
+
+::: {.callout-caution .exo title="Exercice|Transfert|2|T1"}
+Un journal affiche deux graphiques du **même** jeu de données. Sur le premier, l'axe
+vertical va de 0 à 100 ; la courbe paraît presque plate. Sur le second, l'axe vertical va
+de 48 à 52 ; la même courbe paraît grimper en flèche.
+
+(a) Les données sont-elles différentes ? (b) Quel graphique est trompeur, et pourquoi ?
+(c) Quelle règle proposerais-tu pour un axe vertical honnête ?
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+
+## Indice 1
+Revois l'esprit critique du chapitre : un même chiffre peut être présenté de façons très
+différentes.
+
+## Indice 2
+*Question à te poser.* Qu'est-ce qui change entre les deux images : les **données** ou
+l'**échelle** ? Un petit écart sur un axe très « zoomé » paraît-il grand ?
+
+## Indice 3
+*Étape.* Compare l'amplitude de l'axe (0–100 vs 48–52) à la taille réelle des variations.
+
+## Solution
+(a) Non : **mêmes données**, seule l'**échelle** de l'axe change. (b) Le second est
+**trompeur** : en zoomant (48–52), il **exagère** des variations minuscules. (c) Un axe
+honnête part en général de **0** (ou indique clairement toute troncature) et garde une
+échelle proportionnée aux variations réelles.
+
+## Pièges
+Croire qu'un graphique « ne peut pas mentir » ; juger une tendance sans regarder les
+**graduations** de l'axe.
+
+:::
+:::
+
+::: {.callout-caution .exo title="Exercice|Transfert|3|T1"}
+Pour chaque affirmation, dis s'il s'agit d'une **corrélation** ou d'une **causalité**
+établie, et justifie en une phrase.
+
+(a) « Dans un testing, à CV identique, changer le prénom fait chuter le taux de rappel. »
+(b) « Les pays où l'on consomme le plus de chocolat comptent le plus de prix Nobel. »
+(c) « Après avoir augmenté le nombre de contrôles fiscaux, l'administration a récupéré
+davantage d'impôts éludés. »
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+
+## Indice 1
+Revois la *Propriété — quand la corrélation devient une cause* (l'**expérience** contrôlée)
+et l'encadré du chapitre 3 (cause / variable cachée / coïncidence).
+
+## Indice 2
+*Question à te poser.* Dans chaque cas : a-t-on **tout tenu égal** sauf un facteur (→
+expérience → cause), ou seulement **observé** deux chiffres qui vont ensemble ?
+
+## Indice 3
+*Étape.* Repère laquelle des trois situations est un **test contrôlé** (une seule chose
+change).
+
+## Solution
+(a) **Causalité** : c'est une expérience (CV identiques, seul le prénom change) → l'origine
+est bien la cause. (b) **Corrélation** : variable cachée (la **richesse** du pays gonfle les
+deux) — aucun lien de cause. (c) **Prudence** : corrélation plausible, mais d'autres
+facteurs (conjoncture, nouvelles lois) ont pu jouer ; sans expérience contrôlée, la cause
+n'est pas prouvée.
+
+## Pièges
+Prendre toute succession dans le temps pour une cause (« après, donc à cause de ») ;
+oublier qu'un testing **isole** le facteur, contrairement à une simple observation.
+
+:::
+:::
+
+::: {.callout-caution .exo title="Exercice|Dépassement|3|T1"}
+Reprends le nuage « PIB par habitant – espérance de vie » (chapitre 1) et sa droite de
+régression. Rédige un court paragraphe (5–6 lignes) qui : décrit le lien, donne l'ordre de
+grandeur de $r$ attendu, et **nuance** toute conclusion trop rapide du type « il suffit
+d'enrichir un pays pour que ses habitants vivent plus longtemps ».
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+
+## Indice 1
+Mobilise les quatre chapitres : décrire un nuage (ch. 1), l'ajuster (ch. 2), $r$ (ch. 3),
+corrélation vs causalité et limites (ch. 4).
+
+## Indice 2
+*Question à te poser.* Le nuage est-il croissant ? linéaire ou en plateau ? $r$ fort ou
+moyen ? Peut-on parler de **cause** à partir d'une observation ?
+
+## Indice 3
+*Étape.* Structure ton paragraphe : (1) sens + forme, (2) ordre de grandeur de $r$,
+(3) la nuance (plateau, exceptions, corrélation ≠ causalité).
+
+## Solution
+Le nuage est **croissant** mais **non linéaire** : l'espérance de vie monte vite pour les
+pays pauvres puis **plafonne**. Le lien est **moyen à fort** ($r$ de l'ordre de $0{,}7$),
+avec des **exceptions** nettes (États-Unis). On observe donc une **corrélation**, pas une
+preuve de **cause** : enrichir un pays *s'accompagne* souvent d'une meilleure santé, mais
+d'autres facteurs comptent (système de santé, inégalités, mode de vie), et au-delà d'un
+certain revenu le gain devient minime.
+
+## Pièges
+Conclure à une causalité ; oublier le plateau et les points atypiques ; annoncer un $r$
+« parfait » alors que le nuage n'est pas une droite.
+
+:::
+:::

@@ -1,0 +1,14 @@
+---
+title: "Chapitre 4 — Utiliser un ajustement, et le critiquer"
+---
+
+<!-- GÉNÉRÉ par typweb à partir des notes Typst : NE PAS ÉDITER (les modifications seraient écrasées). -->
+
+Une droite d’ajustement ne sert pas qu’à décrire : elle permet de **prévoir** une valeur là où on n’a pas mesuré. Mais toute prévision a ses limites, et savoir les repérer — chez soi comme dans un article — est sans doute la compétence la plus utile de ce chapitre.
+
+## Sections
+
+1. [Prévoir : interpolation et extrapolation](1-prevoir-interpolation-et-extrapolation.qmd)
+2. [Les limites de l’extrapolation](2-les-limites-de-lextrapolation.qmd)
+3. [Un vrai document à critiquer](3-un-vrai-document-a-critiquer.qmd)
+4. [Exercices](4-exercices.qmd) []{.suivi-sec data-exos="4.1 4.2 4.3 4.4"}

@@ -1,0 +1,47 @@
+---
+title: "Réactiver : une variable, une moyenne"
+---
+
+<!-- GÉNÉRÉ par typweb à partir des notes Typst : NE PAS ÉDITER (les modifications seraient écrasées). -->
+
+Avant de manier deux variables, remettons en place l’outil de base : la moyenne.
+
+::: {#definition-1-1 data-sorte="definition" data-num="1.1" data-page="1" data-phys="4" data-id="5UAA1.moyenne" data-type="definition" data-tags="" .theo .theo-definition}
+::: {.theo-head}
+**Définition 1.1** — moyenne
+:::
+
+::: {.theo-body}
+La **moyenne** d’une série de $N$ valeurs $x_{1}, x_{2}, \ldots, x_{N}$ est
+
+$$
+\overline{x} = \frac{x_{1} + x_{2} + \ldots + x_{N}}{N}.
+$$
+
+C’est la valeur qui **résume** la série : si toutes les valeurs étaient identiques, ce serait celle-là.
+:::
+:::
+
+::: {#activite-1-1 data-sorte="activite" data-num="1.1" data-page="1" data-phys="4" data-id="5UAA1.retrouver-moyenne" data-type="activite" data-tags="" .theo .theo-activite}
+::: {.theo-head}
+**Activité 1.1** — retrouver une moyenne
+:::
+
+::: {.theo-body}
+Voici l’espérance de vie (en années, 2022) dans cinq pays européens.
+
+::: {.tableau}
+| Pays | Belgique | France | Allemagne | Pologne | Portugal |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| Espér. de vie | 81,2 | 82,5 | 80,6 | 77,9 | 81,2 |
+:::
+
+a) Calcule l’espérance de vie moyenne de ces cinq pays : $\overline{y} =$ [$403{,}4 \div 5 \approx 80{,}7$ ans]{.rep}
+
+b) L’**étendue** est l’écart entre la plus grande et la plus petite valeur. Ici : [$82{,}5 - 77{,}9 = 4{,}6$ ans]{.rep}
+
+Source : Our World in Data, *Life expectancy*, 2022 (d’après UN, World Population Prospects).
+:::
+:::
+
+Retiens que la moyenne se calcule aussi **directement à la calculatrice** (touche statistique) ou avec la fonction `MOYENNE` d’un tableur : dès que la série est longue, c’est ainsi qu’on procède.

@@ -1,0 +1,186 @@
+---
+title: "Le cours"
+---
+
+Quand un nuage s'organise autour d'une tendance à peu près **droite**, on peut le
+résumer par **une** droite : c'est l'**ajustement linéaire**. Une fois trouvée, cette
+droite remplace des dizaines de points par une seule équation — pratique pour décrire la
+tendance et faire des prévisions (chapitre 4).
+
+::: {.aretenir}
+Résumer un nuage par une droite $y = ax + b$ sert à **décrire** la tendance ($a$ dit dans
+quel sens et à quelle vitesse $y$ évolue), à **prévoir** un $y$ pour un $x$ non observé,
+et à **comparer** deux situations. Mais ajuster n'a de sens que si le nuage est *à peu
+près* aligné — le chapitre 3 dira à quel point.
+:::
+
+## Une série qui évolue : l'écart salarial
+
+Suivons l'**écart salarial** entre femmes et hommes en Belgique : de combien de pour cent
+le salaire horaire moyen des femmes est inférieur à celui des hommes.
+
+| Année | $t$ = année − 2006 | Écart horaire (%) |
+|:--:|:--:|:--:|
+| 2006 | 0 | 9,5 |
+| 2010 | 4 | 10,2 |
+| 2015 | 9 | 6,4 |
+| 2017 | 11 | 5,8 |
+| 2020 | 14 | 3,2 |
+| 2022 | 16 | 0,7 |
+
+*Source : Eurostat, « Gender pay gap in unadjusted form » (sdg_05_20), écart horaire,
+Belgique. On compte les années à partir de 2006 (colonne $t$) pour alléger les calculs.*
+
+## Le point moyen, pivot de l'ajustement
+
+::: {.propriete title="le point moyen est sur la droite"}
+Toute droite d'ajustement raisonnable — par la méthode de Mayer **ou** par les moindres
+carrés — **passe par le point moyen** $G(\overline{t}\,;\,\overline{y})$. C'est le point
+d'équilibre du nuage.
+:::
+
+Ici $\overline{t} = 54/6 = 9$ et $\overline{y} = 35{,}8/6 \approx 5{,}97$, donc
+$G(9\,;\,5{,}97)$.
+
+## La droite de Mayer
+
+::: {.definition title="droite de Mayer"}
+On range les points par abscisse croissante et on les partage en **deux sous-séries** de
+même taille. On calcule le point moyen $G_1$ de la première, $G_2$ de la seconde. La
+**droite de Mayer** est la droite $(G_1 G_2)$.
+:::
+
+L'idée a du sens : chaque moitié du nuage est **résumée** par son point moyen, un
+« représentant » ; relier les deux représentants donne la direction générale, et la
+droite passe tout près de $G$.
+
+::: {.exemple title="Mayer sur l'écart salarial"}
+**Groupe 1** $(0\,;\,9{,}5), (4\,;\,10{,}2), (9\,;\,6{,}4)$ :
+$G_1 \approx (4{,}33\,;\,8{,}70)$.
+**Groupe 2** $(11\,;\,5{,}8), (14\,;\,3{,}2), (16\,;\,0{,}7)$ :
+$G_2 \approx (13{,}67\,;\,3{,}23)$.
+
+Pente : $a = \dfrac{3{,}23 - 8{,}70}{13{,}67 - 4{,}33} \approx -0{,}59$. Puis
+$8{,}70 = -0{,}59 \cdot 4{,}33 + b \Rightarrow b \approx 11{,}2$.
+Droite de Mayer : $y \approx -0{,}59\,t + 11{,}2$.
+:::
+
+## Faire parler les écarts à la moyenne
+
+Comment **un seul nombre** dirait-il si $x$ et $y$ varient ensemble ? On regarde chaque
+point par rapport au point moyen $G$. Traçons par $G$ la verticale $x = \overline{x}$ et
+l'horizontale $y = \overline{y}$ : elles partagent le plan en quatre zones.
+
+Pour un point, on note son **écart en $x$** ($x_i - \overline{x}$) et son **écart en
+$y$** ($y_i - \overline{y}$), puis le **signe de leur produit** :
+
+- en **haut à droite** de $G$ (deux écarts positifs) → produit **positif** ;
+- en **bas à gauche** (deux écarts négatifs) → produit **positif** ;
+- en **haut à gauche** ou **bas à droite** → produit **négatif**.
+
+Sur quatre années de l'écart salarial ($\overline{x}=9$, $\overline{y}\approx 5{,}97$) :
+
+| Année | signe de $x_i - \overline{x}$ | signe de $y_i - \overline{y}$ | signe du produit |
+|:--:|:--:|:--:|:--:|
+| 2006 | − | + | − |
+| 2010 | − | + | − |
+| 2020 | + | − | − |
+| 2022 | + | − | − |
+
+Tous les produits sont négatifs : le nuage est **décroissant**. Si les produits étaient
+majoritairement positifs, il serait croissant. La **moyenne** de ces produits porte un
+nom : la **covariance**.
+
+::: {.definition title="covariance"}
+La **covariance** de $x$ et $y$ est la moyenne des produits des écarts à leurs moyennes :
+$$ \operatorname{cov}(x,y) = \frac{1}{N}\sum (x_i - \overline{x})(y_i - \overline{y}). $$
+Son **signe** donne le **sens** du lien : positive si $x$ et $y$ augmentent ensemble,
+négative s'ils varient en sens contraire, proche de 0 sans tendance nette.
+:::
+
+## La méthode des moindres carrés
+
+La droite de Mayer ne regarde que deux points moyens. La méthode des **moindres carrés**
+utilise **tous** les points : pour chaque point, on mesure l'**écart vertical** à la
+droite (le **résidu**), et on cherche la droite qui rend la **somme des carrés des
+résidus** la plus petite.
+
+**Manipule.** Fais varier la pente ci-dessous (la droite pivote autour de $G$). Les
+segments rouges sont les résidus ; la somme de leurs carrés s'affiche en direct. Cherche
+le minimum, puis clique **« Meilleure droite »**.
+
+```{=html}
+<div class="stat-plot" data-mode="moindres"
+     data-points="[[0,9.5],[4,10.2],[9,6.4],[11,5.8],[14,3.2],[16,0.7]]"
+     data-xmin="0" data-xmax="18" data-ymin="0" data-ymax="12"
+     data-xlabel="t (années)" data-ylabel="écart %"
+     data-caption="Écart salarial : incline la droite et observe la somme des carrés des résidus."></div>
+```
+
+::: {.definition title="droite de régression (moindres carrés)"}
+La **droite de régression** est l'unique droite $y = ax + b$ qui rend **minimale** la
+**somme des carrés des résidus**. On élève les écarts au carré pour que les écarts positifs
+et négatifs ne se compensent pas, et pour pénaliser les gros écarts. Elle passe, elle
+aussi, par le point moyen $G$.
+:::
+
+On admet le résultat, mais sa forme se **comprend** :
+
+::: {.propriete title="pente de la droite de régression"}
+$$ a = \frac{\operatorname{cov}(x,y)}{\operatorname{variance}(x)}
+   = \frac{\sum (x_i-\overline{x})(y_i-\overline{y})}{\sum (x_i-\overline{x})^2},
+   \qquad b = \overline{y} - a\,\overline{x}. $$
+Au numérateur, la **co-variation** de $x$ et $y$ ; au dénominateur, l'**étalement** de
+$x$ seul. La pente dit « de combien $y$ bouge quand $x$ bouge ». Et $b = \overline{y} -
+a\overline{x}$ force la droite à passer par $G$.
+:::
+
+Reste à calculer $\operatorname{cov}$ et $\operatorname{variance}$. Plutôt que de revenir
+aux écarts un à un, on utilise une écriture **équivalente** plus rapide :
+
+::: {.propriete title="formules de calcul (développées)"}
+$$ \operatorname{variance}(x) = \frac{1}{N}\sum x_i^2 - (\overline{x})^2, \qquad
+   \operatorname{cov}(x,y) = \frac{1}{N}\sum x_i y_i - \overline{x}\,\overline{y}. $$
+En mots : **moyenne des carrés − carré de la moyenne** pour la variance ; **moyenne des
+produits − produit des moyennes** pour la covariance. L'**écart-type**
+$\sigma_x = \sqrt{\operatorname{variance}(x)}$ mesure la dispersion.
+:::
+
+::: {.remarque}
+Pourquoi « moyenne des carrés − carré de la moyenne » mesure-t-il la dispersion ? Si
+toutes les valeurs étaient **égales**, les deux quantités coïncideraient : la variance
+serait nulle. Plus les valeurs s'écartent, plus la moyenne des carrés **dépasse** le carré
+de la moyenne — cet excédent, c'est l'étalement. La covariance suit la même idée, avec des
+*produits* au lieu des carrés.
+:::
+
+Ces formules ne réclament qu'un tableau à **quelques colonnes** — pas de colonne d'écarts.
+
+::: {.exemple title="la pente depuis un seul tableau"}
+| $t$ | $y$ | $t^2$ | $y^2$ | $t\,y$ |
+|:--:|:--:|:--:|:--:|:--:|
+| 0 | 9,5 | 0 | 90,25 | 0 |
+| 4 | 10,2 | 16 | 104,04 | 40,8 |
+| 9 | 6,4 | 81 | 40,96 | 57,6 |
+| 11 | 5,8 | 121 | 33,64 | 63,8 |
+| 14 | 3,2 | 196 | 10,24 | 44,8 |
+| 16 | 0,7 | 256 | 0,49 | 11,2 |
+
+Sommes : $\sum t = 54$, $\sum y = 35{,}8$, $\sum t^2 = 670$, $\sum y^2 = 279{,}62$,
+$\sum t y = 218{,}2$, avec $N = 6$.
+
+$\overline{t} = 9$, $\overline{y} \approx 5{,}97$.
+$$ \operatorname{variance}(t) = \frac{670}{6} - 9^2 \approx 30{,}7, \qquad
+   \operatorname{cov}(t,y) = \frac{218{,}2}{6} - 9 \times 5{,}97 \approx -17{,}3. $$
+$$ a = \frac{-17{,}3}{30{,}7} \approx -0{,}57, \qquad
+   b = 5{,}97 - (-0{,}57)\times 9 \approx 11{,}1. $$
+Droite de régression : $y \approx -0{,}57\,t + 11{,}1$ — très proche de la droite de
+Mayer. La colonne $y^2$ resservira au chapitre 3 (coefficient de corrélation).
+:::
+
+::: {.aretenir}
+La **covariance** dit le **sens** (son signe) et sert à calculer la **pente**
+$a = \operatorname{cov}/\operatorname{variance}(x)$. La droite passe toujours par le
+**point moyen** $G$. Pour calculer vite, on utilise les **formules développées** (moyenne
+des carrés/produits − produit/carré des moyennes) : un tableau court suffit.
+:::

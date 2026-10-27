@@ -1,0 +1,26 @@
+---
+title: "Deux variables, un nuage de points"
+---
+
+Bienvenue sur le premier chapitre. Tu y trouveras :
+
+- **[Le cours](cours.qmd)** — série à deux variables, nuage de points, point moyen,
+  avec une **figure interactive** ;
+- **[Les exercices](exercices.qmd)** — chacun accompagné de **coups de pouce**
+  progressifs, à dévoiler un par un seulement si tu bloques.
+
+## Objectifs de la séance
+
+À la fin du chapitre, tu es capable de…
+
+- **C1** — décoder le vocabulaire d'une série à deux variables (population, individu,
+  couple de données) ;
+- **A1** — représenter une série par un nuage de points et y placer le point moyen ;
+- **C3** — décrire un nuage (sens, forme, dispersion, points atypiques).
+
+::: {.callout-tip title="Comment utiliser les coups de pouce"}
+Sous chaque exercice, le bouton **« Coups de pouce »** ouvre des onglets **dévoilés
+dans l'ordre** : d'abord un renvoi à la **théorie**, puis une **question à te poser**,
+puis une **étape** pour démarrer, puis la **solution**, et enfin les **pièges**. Essaie
+toujours l'exercice *avant* d'ouvrir la solution.
+:::

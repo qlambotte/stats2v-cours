@@ -1,0 +1,33 @@
+---
+title: "Le point moyen"
+---
+
+<!-- GÉNÉRÉ par typweb à partir des notes Typst : NE PAS ÉDITER (les modifications seraient écrasées). -->
+
+Le point que tu viens de placer porte un nom.
+
+::: {#definition-1-4 data-sorte="definition" data-num="1.4" data-page="4" data-phys="7" data-id="5UAA1.point-moyen-2" data-type="definition" data-tags="" .theo .theo-definition}
+::: {.theo-head}
+**Définition 1.4** — point moyen
+:::
+
+::: {.theo-body}
+Le **point moyen** d’une série à deux variables est le point $G$ de coordonnées
+
+$$
+G(\overline{x} ; \overline{y}),
+$$
+
+où $\overline{x}$ et $\overline{y}$ sont les moyennes des deux variables. Il marque le **centre** du nuage : c’est le « pays moyen » de la série.
+:::
+:::
+
+::: {#remarque-1-2 data-sorte="remarque" data-num="1.2" data-page="4" data-phys="7" data-id="5UAA1.rem.002" data-type="remarque" data-tags="" .theo .theo-remarque}
+::: {.theo-head}
+**Remarque 1.2**
+:::
+
+::: {.theo-body}
+$G$ n’est pas forcément l’un des points du nuage : aucun pays réel n’a exactement $(33{,}2 ; 77{,}0)$. C’est un point *calculé*, qui résume l’ensemble. Nous le retrouverons au chapitre suivant : toute droite qui résume bien le nuage passera par $G$.
+:::
+:::

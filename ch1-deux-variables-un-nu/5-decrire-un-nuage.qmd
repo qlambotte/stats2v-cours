@@ -1,0 +1,16 @@
+---
+title: "Décrire un nuage"
+---
+
+<!-- GÉNÉRÉ par typweb à partir des notes Typst : NE PAS ÉDITER (les modifications seraient écrasées). -->
+
+Décrire un nuage, ce n’est pas le calculer : c’est le **lire**. Trois questions suffisent, et une quatrième affine.
+
+::: {#cadre-14 .cadre-info}
+- **Sens** — quand $x$ augmente, $y$ tend-il à augmenter (nuage **croissant**), à diminuer (nuage **décroissant**), ou ni l’un ni l’autre (aucun lien) ?
+- **Forme** — les points sont-ils proches d’une **droite** (relation *linéaire*) ou d’une courbe ?
+- **Dispersion** — sont-ils bien **resserrés** autour de cette tendance, ou très **éparpillés** ?
+- **Points atypiques** — un ou plusieurs individus s’écartent-ils nettement du reste ?
+:::
+
+Ces observations préparent la suite : si les points sont proches d’une droite, on pourra les **résumer** par une droite (chapitre 2) ; et l’on saura bientôt **mesurer** par un nombre à quel point le lien est fort (chapitre 3).

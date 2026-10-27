@@ -1,0 +1,114 @@
+---
+title: "Le cours"
+---
+
+On sait tracer une droite d'ajustement. Mais une droite se trace sur *n'importe quel*
+nuage, même sans tendance : il nous faut un **nombre** qui dise si les points sont
+vraiment proches d'une droite. C'est le **coefficient de corrélation**.
+
+## Un nombre entre −1 et 1
+
+::: {.definition title="coefficient de corrélation linéaire"}
+Le **coefficient de corrélation linéaire**, noté $r$, est un nombre toujours compris entre
+$-1$ et $1$ qui mesure à quel point les points sont proches d'une **droite**.
+
+- le **signe** de $r$ donne le **sens** : $r > 0$ nuage croissant, $r < 0$ décroissant ;
+- $|r|$ **proche de 1** : points presque alignés (lien fort) ; $|r|$ **proche de 0** :
+  pas d'alignement (lien linéaire faible ou nul).
+
+On le calcule par $r = \dfrac{\operatorname{cov}(x,y)}{\sigma_x\,\sigma_y}$ ; en pratique,
+la **calculatrice** le donne avec la droite de régression.
+:::
+
+Pourquoi diviser par $\sigma_x\sigma_y$ ? La covariance seule dépend des **unités** (des
+euros, des années…) : sa valeur peut être énorme ou minuscule sans que le lien soit plus
+fort. En la divisant par l'étalement de chaque variable, on efface les unités : $r$ est un
+nombre **sans dimension**, comparable partout. Cela explique aussi pourquoi $r$ ne dépasse
+jamais 1 en valeur absolue : la covariance vaut **au plus** $\sigma_x\sigma_y$ (atteint
+quand les points sont parfaitement alignés). $r$ compare la co-variation **réelle** à la
+co-variation **maximale possible**.
+
+::: {.aretenir}
+Ordre de grandeur pour lire $|r|$ (à ne pas prendre au pied de la lettre) : au-delà de
+$0{,}9$ **très fort** ; entre $0{,}7$ et $0{,}9$ **fort** ; entre $0{,}5$ et $0{,}7$
+**moyen** ; en dessous de $0{,}5$ **faible**.
+:::
+
+::: {.remarque}
+$r$ ne mesure **que** le lien *linéaire*. Un nuage en forme de U peut avoir $r \approx 0$
+alors que le lien est évident : il n'est simplement pas *droit*. Et $r$ ne dit rien de la
+**pente** : une droite très inclinée et une droite presque plate peuvent donner $r = 1$.
+:::
+
+## Lire r sur un nuage
+
+Fais glisser la **dispersion** : les points partent d'une droite (lien fort, $r$ proche de
+1) et s'éparpillent de plus en plus ($r$ chute vers 0).
+
+```{=html}
+<div class="stat-plot" data-mode="correlation"
+     data-xlabel="x" data-ylabel="y"
+     data-caption="Démonstration : plus le nuage est dispersé, plus |r| est petit."></div>
+```
+
+## Calculer r
+
+::: {.exemple title="la corrélation de l'écart salarial"}
+Reprenons la série « écart salarial » du chapitre 2. À la calculatrice, $r \approx -0{,}94$.
+Le signe négatif confirme la **baisse** ; la valeur, très proche de $-1$, confirme que les
+points sont **bien alignés** — la droite de régression était justifiée.
+
+Depuis le tableau du chapitre 2 : $\operatorname{cov}(t,y) \approx -17{,}3$,
+$\sigma_t = \sqrt{30{,}7} \approx 5{,}54$,
+$\sigma_y = \sqrt{279{,}62/6 - 5{,}97^2} \approx 3{,}32$, d'où
+$$ r = \frac{\operatorname{cov}(t,y)}{\sigma_t\,\sigma_y}
+     \approx \frac{-17{,}3}{5{,}54 \times 3{,}32} \approx -0{,}94. $$
+
+```{=html}
+<div class="stat-plot" data-mode="regression"
+     data-points="[[0,9.5],[4,10.2],[9,6.4],[11,5.8],[14,3.2],[16,0.7]]"
+     data-xmin="0" data-xmax="18" data-ymin="0" data-ymax="12"
+     data-xlabel="t (années)" data-ylabel="écart %"
+     data-caption="Écart salarial : nuage, droite de régression et r ≈ −0,94."></div>
+```
+:::
+
+## Corrélation n'est pas causalité
+
+Un $r$ proche de 1 dit que deux variables **varient ensemble**. Il ne dit **jamais**, à lui
+seul, que l'une **cause** l'autre.
+
+::: {.exemple title="margarine et divorces"}
+Aux États-Unis (2000–2009), la consommation de margarine par habitant et le taux de
+divorces dans le Maine ont un $r \approx 0{,}99$ !
+
+```{=html}
+<div class="stat-plot" data-mode="regression"
+     data-points="[[8.2,5.0],[7.0,4.7],[6.5,4.6],[5.3,4.4],[5.2,4.3],[4.0,4.1],[4.6,4.2],[4.5,4.2],[4.2,4.2],[3.7,4.1]]"
+     data-xmin="0" data-xmax="9" data-ymin="4" data-ymax="5.2"
+     data-xlabel="margarine" data-ylabel="divorces"
+     data-caption="Margarine et divorces (Maine), 2000–2009 : r ≈ 0,99 — sans aucun lien de cause."></div>
+```
+
+Manger moins de margarine ne réduit évidemment pas les divorces : les deux quantités ont
+simplement **baissé en même temps**. Une corrélation, même parfaite, ne prouve rien.
+
+*Source : USDA (margarine) et CDC, National Vital Statistics (divorces), compilés par
+T. Vigen, « Spurious Correlations ».*
+:::
+
+::: {.aretenir}
+Quand deux variables sont corrélées, il y a **trois explications possibles** :
+
+- **cause à effet** — $x$ agit réellement sur $y$ ;
+- **variable cachée** — un troisième facteur agit sur $x$ *et* sur $y$ (dans une grande
+  ville, il y a plus de policiers *et* plus de délits : la cause commune est la **taille**
+  de la ville) ;
+- **coïncidence** — pur hasard (margarine et divorces).
+:::
+
+::: {.remarque}
+Méfie-toi des débats où l'on relie deux phénomènes de société en montrant qu'ils « vont
+ensemble ». Un nuage ne suffit jamais à établir une cause : il faut écarter les variables
+cachées et le hasard (on verra au chapitre 4 qu'une **expérience**, elle, le peut).
+:::

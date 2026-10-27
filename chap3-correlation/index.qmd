@@ -1,0 +1,22 @@
+---
+title: "Mesurer la liaison : le coefficient de corrélation"
+---
+
+Troisième chapitre. Tu y trouveras :
+
+- **[Le cours](cours.qmd)** — le coefficient de corrélation $r$, comment le lire sur un
+  nuage (**figure interactive**), et pourquoi corrélation n'est pas causalité ;
+- **[Les exercices](exercices.qmd)** — avec **coups de pouce** progressifs.
+
+## Objectifs de la séance
+
+À la fin du chapitre, tu es capable de…
+
+- **C3** — interpréter le lien entre la forme d'un nuage et la valeur de $r$ ;
+- **A4** — calculer un coefficient de corrélation (calculatrice) ;
+- **C4** — expliquer, sur un exemple, la différence entre corrélation et causalité.
+
+::: {.callout-tip title="Manipule d'abord"}
+Dans le cours, fais glisser la **dispersion** du nuage et observe $r$ chuter : tu verras
+concrètement ce que « lien fort » ou « lien faible » veut dire.
+:::

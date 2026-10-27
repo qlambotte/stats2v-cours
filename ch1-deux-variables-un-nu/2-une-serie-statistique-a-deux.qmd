@@ -1,0 +1,51 @@
+---
+title: "Une série statistique à deux variables"
+---
+
+<!-- GÉNÉRÉ par typweb à partir des notes Typst : NE PAS ÉDITER (les modifications seraient écrasées). -->
+
+Relevons maintenant, sur chaque pays, **deux** nombres à la fois : son revenu et son espérance de vie.
+
+::: {#definition-1-2 data-sorte="definition" data-num="1.2" data-page="2" data-phys="5" data-id="5UAA1.serie-statistique-deux-variables-2" data-type="definition" data-tags="" .theo .theo-definition}
+::: {.theo-head}
+**Définition 1.2** — série statistique à deux variables
+:::
+
+::: {.theo-body}
+On étudie une **population** (ici : des pays). Sur chaque **individu** de cette population, on relève **deux** caractères chiffrés, notés $x$ et $y$. À chaque individu correspond alors un **couple** $(x_{i} ; y_{i})$. L’ensemble de ces couples est une **série statistique à deux variables**.
+:::
+:::
+
+Le tableau ci-dessous rassemble, pour $14$ pays, le **PIB par habitant** (la richesse produite par habitant, en milliers de dollars) et l’**espérance de vie**. Ce sont nos deux variables : $x$ = PIB par habitant, $y$ = espérance de vie.
+
+::: {.tableau}
+| Pays | PIB/hab. ($1000$ \$) | Espér. de vie (ans) |
+|:---:|:---:|:---:|
+| Nigéria | 5,1 | 54,1 |
+| Inde | 7,8 | 71,7 |
+| Brésil | 14,6 | 74,9 |
+| Mexique | 16,2 | 74,0 |
+| Chine | 19,2 | 78,2 |
+| Turquie | 27,4 | 77,6 |
+| Portugal | 29,0 | 81,2 |
+| Pologne | 32,5 | 77,9 |
+| Japon | 38,3 | 84,1 |
+| France | 39,1 | 82,5 |
+| Belgique | 41,9 | 81,2 |
+| Allemagne | 46,6 | 80,6 |
+| États-Unis | 58,5 | 78,0 |
+| Norvège | 88,4 | 82,6 |
+:::
+
+Source : Our World in Data, *Life expectancy vs. GDP per capita*, 2022 (PIB par habitant en dollars internationaux constants, d’après la Banque mondiale ; espérance de vie d’après UN WPP). \
+ ourworldindata.org/grapher/life-expectancy-vs-gdp-per-capita
+
+::: {#remarque-1-1 data-sorte="remarque" data-num="1.1" data-page="3" data-phys="6" data-id="5UAA1.rem.001" data-type="remarque" data-tags="" .theo .theo-remarque}
+::: {.theo-head}
+**Remarque 1.1**
+:::
+
+::: {.theo-body}
+Le choix de $x$ et de $y$ n’est pas neutre : on met en $x$ (abscisse) la variable que l’on soupçonne d’**expliquer** l’autre, et en $y$ (ordonnée) celle que l’on cherche à comprendre. Ici, on se demande si la richesse ($x$) éclaire l’espérance de vie ($y$).
+:::
+:::

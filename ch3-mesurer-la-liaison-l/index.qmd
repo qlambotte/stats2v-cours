@@ -1,0 +1,15 @@
+---
+title: "Chapitre 3 — Mesurer la liaison : le coefficient de corrélation"
+---
+
+<!-- GÉNÉRÉ par typweb à partir des notes Typst : NE PAS ÉDITER (les modifications seraient écrasées). -->
+
+On sait tracer une droite d’ajustement. Mais une droite peut se tracer sur *n’importe quel* nuage, même un nuage sans tendance : rien ne dit qu’elle a un sens. Il nous faut un **nombre** qui réponde à la question « les points sont-ils vraiment proches d’une droite ? ». Ce nombre est le **coefficient de corrélation**.
+
+## Sections
+
+1. [Un nombre entre $-1$ et $1$](1-un-nombre-entre-1-et.qmd)
+2. [Lire $r$ sur un nuage](2-lire-r-sur-un-nuage.qmd)
+3. [Calculer $r$](3-calculer-r.qmd)
+4. [Corrélation n’est pas causalité](4-correlation-nest-pas-causalite.qmd)
+5. [Exercices](5-exercices.qmd) []{.suivi-sec data-exos="3.1 3.2 3.3 3.4"}

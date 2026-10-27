@@ -1,0 +1,121 @@
+---
+title: "Objectifs"
+subtitle: "Compétences à développer dans ce chapitre"
+---
+
+
+<!-- GÉNÉRÉ par typweb (grille de objectifs.typ) : NE PAS ÉDITER. -->
+
+
+::: {.obj-intro}
+Je suis capable de…
+:::
+
+
+## Connaître {.obj-cat}
+
+::: {.obj-liste}
+
+::: {.obj data-code="C1"}
+[C1]{.obj-code}
+
+::: {.obj-texte}
+Décoder le vocabulaire d’une série statistique à deux variables : population, individu, couple de données, les deux variables.
+:::
+:::
+
+::: {.obj data-code="C2"}
+[C2]{.obj-code}
+
+::: {.obj-texte}
+Expliquer l’intérêt d’un ajustement : à quoi sert de résumer un nuage de points par une droite.
+:::
+:::
+
+::: {.obj data-code="C3"}
+[C3]{.obj-code}
+
+::: {.obj-texte}
+Interpréter le lien entre la forme d’un nuage de points et la valeur du coefficient de corrélation.
+:::
+:::
+
+::: {.obj data-code="C4"}
+[C4]{.obj-code}
+
+::: {.obj-texte}
+Expliquer, sur un exemple, la différence entre corrélation et causalité.
+:::
+:::
+
+::: {.obj data-code="C5"}
+[C5]{.obj-code}
+
+::: {.obj-texte}
+Expliquer le principe de la méthode des moindres carrés.
+:::
+:::
+
+:::
+
+
+## Appliquer {.obj-cat}
+
+::: {.obj-liste}
+
+::: {.obj data-code="A1"}
+[A1]{.obj-code}
+
+::: {.obj-texte}
+Représenter une série statistique à deux variables par un nuage de points et y placer le point moyen.
+:::
+:::
+
+::: {.obj data-code="A2"}
+[A2]{.obj-code}
+
+::: {.obj-texte}
+Déterminer l’équation d’une droite de Mayer.
+:::
+:::
+
+::: {.obj data-code="A3"}
+[A3]{.obj-code}
+
+::: {.obj-texte}
+Déterminer l’équation de la droite de régression par la méthode des moindres carrés.
+:::
+:::
+
+::: {.obj data-code="A4"}
+[A4]{.obj-code}
+
+::: {.obj-texte}
+Utiliser la calculatrice ou un tableur pour obtenir un ajustement linéaire et un coefficient de corrélation.
+:::
+:::
+
+::: {.obj data-code="A5"}
+[A5]{.obj-code}
+
+::: {.obj-texte}
+Calculer une valeur théorique à partir d’un ajustement (interpolation, extrapolation).
+:::
+:::
+
+:::
+
+
+## Transférer {.obj-cat}
+
+::: {.obj-liste}
+
+::: {.obj data-code="T1"}
+[T1]{.obj-code}
+
+::: {.obj-texte}
+Critiquer et commenter des informations statistiques présentées ou calculées, dans un contexte réel.
+:::
+:::
+
+:::

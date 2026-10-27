@@ -1,0 +1,38 @@
+---
+title: "Un nombre entre -1 et 1"
+---
+
+<!-- GÉNÉRÉ par typweb à partir des notes Typst : NE PAS ÉDITER (les modifications seraient écrasées). -->
+
+::: {#definition-3-1 data-sorte="definition" data-num="3.1" data-page="15" data-phys="18" data-id="5UAA1.coefficient-correlation-lineaire" data-type="definition" data-tags="" .theo .theo-definition}
+::: {.theo-head}
+**Définition 3.1** — coefficient de corrélation linéaire
+:::
+
+::: {.theo-body}
+Le **coefficient de corrélation linéaire**, noté $r$, est un nombre toujours compris entre $-1$ et $1$ qui mesure à quel point les points d’un nuage sont proches d’une **droite**.
+
+- le **signe** de $r$ donne le **sens** : $r > 0$ pour un nuage croissant, $r < 0$ pour un nuage décroissant ;
+- $|r|$ **proche de 1** : les points sont presque alignés (lien fort) ; $|r|$ **proche de 0** : aucun alignement (lien linéaire faible ou nul).
+
+On le calcule par $r = \frac{\text{covariance}(x, y)}{\sigma_{x} \sigma_{y}}$, mais en pratique c’est la **calculatrice** qui le donne, en même temps que la droite de régression.
+:::
+:::
+
+Pourquoi diviser par $\sigma_{x} \sigma_{y}$ ? La covariance seule dépend des **unités** (des euros, des années, des degrés…) : sa valeur peut être énorme ou minuscule sans que le lien soit pour autant plus ou moins fort. En la divisant par l’étalement de chaque variable, on efface les unités : $r$ devient un nombre **sans dimension**, toujours entre $-1$ et $1$, donc **comparable** d’un contexte à l’autre.
+
+Cette division explique aussi *pourquoi* $r$ ne dépasse jamais $1$ en valeur absolue : la covariance est au maximum égale à $\sigma_{x} \sigma_{y}$ (ce maximum est atteint quand les points sont parfaitement alignés). Le coefficient $r$ compare donc la co-variation **réelle** à la co-variation **maximale possible** — d’où $-1 \leq r \leq 1$, et $r = \pm 1$ pour un alignement parfait.
+
+::: {#cadre-tres-fort .cadre-info}
+Pour interpréter $|r|$, un ordre de grandeur utile (à ne pas prendre au pied de la lettre) : au-delà de $0{,}9$, lien **très fort** ; entre $0{,}7$ et $0{,}9$, **fort** ; entre $0{,}5$ et $0{,}7$, **moyen** ; en dessous de $0{,}5$, **faible**.
+:::
+
+::: {#remarque-3-1 data-sorte="remarque" data-num="3.1" data-page="16" data-phys="19" data-id="5UAA1.rem.005" data-type="remarque" data-tags="" .theo .theo-remarque}
+::: {.theo-head}
+**Remarque 3.1**
+:::
+
+::: {.theo-body}
+$r$ ne mesure **que** le lien *linéaire*. Un nuage en forme de U (parabole) peut avoir $r \approx 0$ alors que le lien entre $x$ et $y$ est évident : il n’est simplement pas *droit*. De même, $r$ ne dit rien de la **pente** : une droite très inclinée et une droite presque plate peuvent toutes deux donner $r = 1$.
+:::
+:::
