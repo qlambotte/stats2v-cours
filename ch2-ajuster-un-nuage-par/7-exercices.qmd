@@ -6,7 +6,7 @@ title: "Exercices"
 
 ::: {#exercice-2-1 data-sorte="exercice" data-num="2.1" data-page="13" data-phys="16" data-id="5UAA1.ex.005" data-type="exercice" data-tags="" .exo}
 ::: {.exo-tete}
-[✎ Exercice 2.1]{.exo-titre} [[A2]{.exo-comp} ★☆☆]{.exo-meta}
+[✎ Exercice 2.1]{.exo-titre} [[A2]{.exo-comp data-tip="A2 : Déterminer l’équation d’une droite de Mayer." tabindex="0"} ★☆☆]{.exo-meta}
 :::
 
 ::: {.exo-corps}
@@ -46,7 +46,7 @@ $G_{1} = (1{,}5 \, ; \, 3{,}5)$, $G_{2} = (4{,}5 \, ; \, 9)$. $a = \frac{9 - 3{,
 
 ::: {#exercice-2-2 data-sorte="exercice" data-num="2.2" data-page="13" data-phys="16" data-id="5UAA1.ex.006" data-type="exercice" data-tags="" .exo}
 ::: {.exo-tete}
-[✎ Exercice 2.2]{.exo-titre} [[A3]{.exo-comp} ★★☆]{.exo-meta}
+[✎ Exercice 2.2]{.exo-titre} [[A3]{.exo-comp data-tip="A3 : Déterminer l’équation de la droite de régression par la méthode des moindres carrés." tabindex="0"} ★★☆]{.exo-meta}
 :::
 
 ::: {.exo-corps}
@@ -80,7 +80,7 @@ Diviser $\sum x^{2}$ par $N$ mais oublier de retrancher $\overline{x} ^2$ ; conf
 
 ::: {#exercice-2-3 data-sorte="exercice" data-num="2.3" data-page="13" data-phys="16" data-id="5UAA1.ex.007" data-type="exercice" data-tags="" .exo}
 ::: {.exo-tete}
-[✎ Exercice 2.3]{.exo-titre} [[C5]{.exo-comp} ★★☆]{.exo-meta}
+[✎ Exercice 2.3]{.exo-titre} [[C5]{.exo-comp data-tip="C5 : Expliquer le principe de la méthode des moindres carrés." tabindex="0"} ★★☆]{.exo-meta}
 :::
 
 ::: {.exo-corps}
@@ -114,7 +114,7 @@ Croire qu’« au-dessus » veut dire « proche » ; oublier que c’est la somm
 
 ::: {#exercice-2-4 data-sorte="exercice" data-num="2.4" data-page="14" data-phys="17" data-id="5UAA1.ex.008" data-type="exercice" data-tags="" .exo}
 ::: {.exo-tete}
-[✎ Exercice 2.4]{.exo-titre} [[A4]{.exo-comp} ★★☆]{.exo-meta}
+[✎ Exercice 2.4]{.exo-titre} [[A4]{.exo-comp data-tip="A4 : Utiliser la calculatrice ou un tableur pour obtenir un ajustement linéaire et un coefficient de corrélation." tabindex="0"} ★★☆]{.exo-meta}
 :::
 
 ::: {.exo-corps}

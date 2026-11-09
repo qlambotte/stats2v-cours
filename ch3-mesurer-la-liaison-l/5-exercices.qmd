@@ -6,7 +6,7 @@ title: "Exercices"
 
 ::: {#exercice-3-1 data-sorte="exercice" data-num="3.1" data-page="18" data-phys="21" data-id="5UAA1.ex.009" data-type="exercice" data-tags="" .exo}
 ::: {.exo-tete}
-[✎ Exercice 3.1]{.exo-titre} [[C3]{.exo-comp} ★☆☆]{.exo-meta}
+[✎ Exercice 3.1]{.exo-titre} [[C3]{.exo-comp data-tip="C3 : Interpréter le lien entre la forme d’un nuage de points et la valeur du coefficient de corrélation." tabindex="0"} ★☆☆]{.exo-meta}
 :::
 
 ::: {.exo-corps}
@@ -47,7 +47,7 @@ Confondre signe (sens) et valeur absolue (force) ; croire que $r$ négatif = « 
 
 ::: {#exercice-3-2 data-sorte="exercice" data-num="3.2" data-page="18" data-phys="21" data-id="5UAA1.ex.010" data-type="exercice" data-tags="" .exo}
 ::: {.exo-tete}
-[✎ Exercice 3.2]{.exo-titre} [[C4]{.exo-comp} ★★☆]{.exo-meta}
+[✎ Exercice 3.2]{.exo-titre} [[C4]{.exo-comp data-tip="C4 : Expliquer, sur un exemple, la différence entre corrélation et causalité." tabindex="0"} ★★☆]{.exo-meta}
 :::
 
 ::: {.exo-corps}
@@ -87,7 +87,7 @@ Chercher un lien direct entre les deux variables au lieu d’une **cause commune
 
 ::: {#exercice-3-3 data-sorte="exercice" data-num="3.3" data-page="18" data-phys="21" data-id="5UAA1.ex.011" data-type="exercice" data-tags="" .exo}
 ::: {.exo-tete}
-[✎ Exercice 3.3]{.exo-titre} [[C4]{.exo-comp} ★★☆]{.exo-meta}
+[✎ Exercice 3.3]{.exo-titre} [[C4]{.exo-comp data-tip="C4 : Expliquer, sur un exemple, la différence entre corrélation et causalité." tabindex="0"} ★★☆]{.exo-meta}
 :::
 
 ::: {.exo-corps}
@@ -125,7 +125,7 @@ Lire une causalité (« la police cause / ne réduit pas les délits ») dans un
 
 ::: {#exercice-3-4 data-sorte="exercice" data-num="3.4" data-page="19" data-phys="22" data-id="5UAA1.ex.012" data-type="exercice" data-tags="" .exo}
 ::: {.exo-tete}
-[✎ Exercice 3.4]{.exo-titre} [[A4]{.exo-comp} ★★☆]{.exo-meta}
+[✎ Exercice 3.4]{.exo-titre} [[A4]{.exo-comp data-tip="A4 : Utiliser la calculatrice ou un tableur pour obtenir un ajustement linéaire et un coefficient de corrélation." tabindex="0"} ★★☆]{.exo-meta}
 :::
 
 ::: {.exo-corps}

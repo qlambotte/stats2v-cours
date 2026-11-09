@@ -6,7 +6,7 @@ title: "Exercices"
 
 ::: {#exercice-4-1 data-sorte="exercice" data-num="4.1" data-page="23" data-phys="26" data-id="5UAA1.ex.013" data-type="exercice" data-tags="" .exo}
 ::: {.exo-tete}
-[✎ Exercice 4.1]{.exo-titre} [[A5]{.exo-comp} ★☆☆]{.exo-meta}
+[✎ Exercice 4.1]{.exo-titre} [[A5]{.exo-comp data-tip="A5 : Calculer une valeur théorique à partir d’un ajustement (interpolation, extrapolation)." tabindex="0"} ★☆☆]{.exo-meta}
 :::
 
 ::: {.exo-corps}
@@ -45,7 +45,7 @@ Appliquer la droite sans se demander si le $x$ est dans l’intervalle ; accepte
 
 ::: {#exercice-4-2 data-sorte="exercice" data-num="4.2" data-page="23" data-phys="26" data-id="5UAA1.ex.014" data-type="exercice" data-tags="" .exo}
 ::: {.exo-tete}
-[✎ Exercice 4.2]{.exo-titre} [[T1]{.exo-comp} ★★☆]{.exo-meta}
+[✎ Exercice 4.2]{.exo-titre} [[T1]{.exo-comp data-tip="T1 : Critiquer et commenter des informations statistiques présentées ou calculées, dans un contexte réel." tabindex="0"} ★★☆]{.exo-meta}
 :::
 
 ::: {.exo-corps}
@@ -85,7 +85,7 @@ Croire qu’un graphique « ne peut pas mentir » ; juger une tendance sans rega
 
 ::: {#exercice-4-3 data-sorte="exercice" data-num="4.3" data-page="23" data-phys="26" data-id="5UAA1.ex.015" data-type="exercice" data-tags="" .exo}
 ::: {.exo-tete}
-[✎ Exercice 4.3]{.exo-titre} [[T1]{.exo-comp} ★★★]{.exo-meta}
+[✎ Exercice 4.3]{.exo-titre} [[T1]{.exo-comp data-tip="T1 : Critiquer et commenter des informations statistiques présentées ou calculées, dans un contexte réel." tabindex="0"} ★★★]{.exo-meta}
 :::
 
 ::: {.exo-corps}
@@ -123,7 +123,7 @@ Prendre toute succession dans le temps pour une cause (« après, donc à cause 
 
 ::: {#exercice-4-4 data-sorte="exercice" data-num="4.4" data-page="23" data-phys="26" data-id="5UAA1.ex.016" data-type="exercice" data-tags="" .exo}
 ::: {.exo-tete}
-[✎ Exercice 4.4]{.exo-titre} [[T1]{.exo-comp} ★★★]{.exo-meta}
+[✎ Exercice 4.4]{.exo-titre} [[T1]{.exo-comp data-tip="T1 : Critiquer et commenter des informations statistiques présentées ou calculées, dans un contexte réel." tabindex="0"} ★★★]{.exo-meta}
 :::
 
 ::: {.exo-corps}

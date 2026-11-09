@@ -5,6 +5,13 @@ subtitle: "Ce qui a changé dans le cours en ligne"
 
 <!-- GÉNÉRÉ par typweb à partir des notes Typst : NE PAS ÉDITER (les modifications seraient écrasées). -->
 
+## 09/11/2026
+
+- [Exercices](ch1-deux-variables-un-nu/6-exercices.qmd) — modifié : [Exercice 1.1](ch1-deux-variables-un-nu/6-exercices.qmd#exercice-1-1), [Exercice 1.2](ch1-deux-variables-un-nu/6-exercices.qmd#exercice-1-2), [Exercice 1.3](ch1-deux-variables-un-nu/6-exercices.qmd#exercice-1-3), [Exercice 1.4](ch1-deux-variables-un-nu/6-exercices.qmd#exercice-1-4)
+- [Exercices](ch2-ajuster-un-nuage-par/7-exercices.qmd) — modifié : [Exercice 2.1](ch2-ajuster-un-nuage-par/7-exercices.qmd#exercice-2-1), [Exercice 2.2](ch2-ajuster-un-nuage-par/7-exercices.qmd#exercice-2-2), [Exercice 2.3](ch2-ajuster-un-nuage-par/7-exercices.qmd#exercice-2-3), [Exercice 2.4](ch2-ajuster-un-nuage-par/7-exercices.qmd#exercice-2-4)
+- [Exercices](ch3-mesurer-la-liaison-l/5-exercices.qmd) — modifié : [Exercice 3.1](ch3-mesurer-la-liaison-l/5-exercices.qmd#exercice-3-1), [Exercice 3.2](ch3-mesurer-la-liaison-l/5-exercices.qmd#exercice-3-2), [Exercice 3.3](ch3-mesurer-la-liaison-l/5-exercices.qmd#exercice-3-3), [Exercice 3.4](ch3-mesurer-la-liaison-l/5-exercices.qmd#exercice-3-4)
+- [Exercices](ch4-utiliser-un-ajusteme/4-exercices.qmd) — modifié : [Exercice 4.1](ch4-utiliser-un-ajusteme/4-exercices.qmd#exercice-4-1), [Exercice 4.2](ch4-utiliser-un-ajusteme/4-exercices.qmd#exercice-4-2), [Exercice 4.3](ch4-utiliser-un-ajusteme/4-exercices.qmd#exercice-4-3), [Exercice 4.4](ch4-utiliser-un-ajusteme/4-exercices.qmd#exercice-4-4)
+
 ## 30/09/2026
 
 - Première version en ligne du cours.
